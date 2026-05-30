@@ -391,7 +391,7 @@ li {
 .services__bottom {
     display: flex;
     flex-direction: column;
-    margin: 50px 60px 0;
+    margin: 50px 60px 94px;
     max-width: 760px;
 }
 
@@ -410,7 +410,7 @@ li {
     line-height: 150%;
     text-align: right;
     text-transform: uppercase;
-    color: var(--text-color);
+    color:var(--heading-color);
     margin-top: 20px;
 }
 
