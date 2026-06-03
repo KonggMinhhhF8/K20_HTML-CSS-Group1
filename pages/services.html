@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>tailwind</title>
+
+        <!-- Embed Fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <!-- Styles Css -->
+        <link rel="stylesheet" href="../assets/css/services.css" />
+    </head>
+    <body class="bg-[#0F0F0F] h-[5000px]">
+        <!-- Check Menu -->
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <!-- Header -->
+
+        <!-- Header di chuyển khi cuộn  -->
+        <header
+            class="w-[calc(100% - 48px)] sticky top-0 z-[100] flex items-center justify-between p-[14px] mx-4 mt-[41px] mb-5 lg:py-5 lg:pr-5 lg:pl-10 lg:mx-10 lg:mt-[30px] lg:mb-[50px] 2xl:mx-[50px] 2xl:mt-[30px] 2xl:mb-[50px] 2xl:p-6 rounded-[10px] bg-[#1A1A1A]"
+        >
+            <a
+                href="#!"
+                class="w-[86.47px] h-4 lg:w-[97px] lg:h-[18px] 2xl:w-[130px] 2xl:h-6"
+            >
+                <img src="../assets/img/services/Logo.png" alt="Logo" />
+            </a>
+
+            <!-- Hamburger Menu -->
+
+            <label class="lg:hidden cursor-pointer" for="menu-toggle"
+                ><img src="../assets/icon/services/menu.svg" alt="Menu"
+            /></label>
+            <!-- Navigation Desktop -->
+            <nav class="lg:flex hidden lg:bg-[#1A1A1A]">
+                <ul class="flex font-mono uppercase text-[#81807E]">
+                    <li
+                        class="flex items-center justify-center lg:mr-[14px] lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
+                    >
+                        <a
+                            href="#!"
+                            class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
+                            >Home</a
+                        >
+                    </li>
+                    <li
+                        class="flex items-center justify-center lg:mr-[14px] lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
+                    >
+                        <a
+                            href="#!"
+                            class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
+                            >Services</a
+                        >
+                    </li>
+                    <li
+                        class="flex items-center justify-center lg:mr-[14px] lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
+                    >
+                        <a
+                            href="#!"
+                            class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
+                            >Projects</a
+                        >
+                    </li>
+                    <li
+                        class="flex items-center justify-center lg:mr-[14px] lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
+                    >
+                        <a
+                            href="#!"
+                            class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
+                            >About</a
+                        >
+                    </li>
+                    <li
+                        class="flex items-center justify-center lg:mr-[14px] lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
+                    >
+                        <a
+                            href="#!"
+                            class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
+                            >Careers</a
+                        >
+                    </li>
+                    <li
+                        class="flex items-center justify-center lg:mr-[14px] lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
+                    >
+                        <a
+                            href="#!"
+                            class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
+                            >Blogs</a
+                        >
+                    </li>
+                    <li
+                        class="flex items-center justify-center lg:text-sm 2xl:text-lg bg-[#CE7D63] text-[#0F0F0F] rounded-[10px]"
+                    >
+                        <a
+                            href="#!"
+                            class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:opacity-70 transition-colors duration-300"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Navigation Mobile -->
+        <nav
+            class="fixed z-[300] font-mono h-screen top-[41px] w-[280px] p-6 right-0 translate-x-full peer-checked:translate-x-0 lg:hidden bg-[#1A1A1A] transition-transform duration-300 ease-in-out"
+        >
+            <ul class="flex gap-5 flex-col mt-32 text-[#81807E]">
+                <li
+                    class="flex justify-center bg-[#0F0F0F] rounded-xl shadow-lg"
+                >
+                    <a
+                        href="#!"
+                        class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-colors duration-300"
+                        >Home</a
+                    >
+                </li>
+                <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
+                    <a
+                        href="#!"
+                        class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-colors duration-300"
+                        >Services</a
+                    >
+                </li>
+                <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
+                    <a
+                        href="#!"
+                        class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-colors duration-300"
+                        >Projects</a
+                    >
+                </li>
+                <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
+                    <a
+                        href="#!"
+                        class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-colors duration-300"
+                        >About</a
+                    >
+                </li>
+                <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
+                    <a
+                        href="#!"
+                        class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-colors duration-300"
+                        >Careers</a
+                    >
+                </li>
+                <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
+                    <a
+                        href="#!"
+                        class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-colors duration-300"
+                        >Blogs</a
+                    >
+                </li>
+                <li
+                    class="flex justify-center bg-[#CE7D63] rounded-xl whitespace-nowrap"
+                >
+                    <a
+                        href="#!"
+                        class="hover:bg-red-500 active:text-[#E7BEB1] text-[#0F0F0F] px-20 py-4 transition-colors duration-300"
+                        >Contact Us</a
+                    >
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Overlay -->
+        <label
+            for="menu-toggle"
+            class="fixed z-[200] inset-0 bg-[#1A1A1A] opacity-0 invisible peer-checked:visible peer-checked:opacity-70 transition-opacity duration-300"
+        ></label>
+    </body>
+</html>
