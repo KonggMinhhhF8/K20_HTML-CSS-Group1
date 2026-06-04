@@ -409,11 +409,11 @@ a {
     font-size: 2.4rem;
     text-transform: uppercase;
 }
-.show-case__detail {
+.detail__tag {
     display: flex;
     align-items: center;
     gap: 10px;
-    .show-case__detail--icon {
+    .detail__icon {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -465,8 +465,12 @@ a {
 .show-case__preview {
     border-radius: 14px;
     overflow: hidden;
-    object-fit: cover;
     max-height: 426px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 /* show-case tech */
@@ -536,13 +540,19 @@ a {
     align-items: center;
     gap: 10px;
 }
-.showcase__avatar {
+.showcase__avatars {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    object-fit: cover;
+
     overflow: hidden;
+    flex-shrink: 0;
     background-color: #e7beb1;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 /* book a call */
@@ -562,4 +572,169 @@ a {
         height: 63px;
         border-radius: 12px;
     }
+}
+
+.testimonial {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #0f0f0f;
+    border: 2px solid #1f1f1f;
+    border-radius: 20px;
+}
+
+.testimonial-title {
+    width: 1780px;
+    padding: 50px;
+    background-color: var(--bg);
+    margin-bottom: 20px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feedback-item__desc {
+    margin-top: 24px;
+    color: var(--desc-bg);
+    font-family: Roboto Flex;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.feedback-item__heading {
+    font-family: Roboto Flex;
+    color: var(--title-bg);
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.feedback-item__body {
+    padding: 40px;
+}
+
+.feedback-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    border-radius: 14px;
+    overflow: hidden;
+}
+/* footer-feedback */
+
+.feedback-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: #1f1f1f;
+    margin-top: auto;
+}
+
+.author-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.feedback-avartar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ce7d63;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.avar-info .name {
+    color: #f3dfd8;
+    font-family: Roboto Flex;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.job-title {
+    color: #81807e;
+    font-family: Roboto Flex;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 150%;
+}
+.rotate-icon {
+    transform: rotate(45deg);
+}
+/* question */
+.question-top {
+    margin-top: 120px;
+}
+.question-top__title {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* frequently -question */
+.faq__question-text {
+    color: var(--title-bg);
+    font-family: Roboto Flex;
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+/* answer-text */
+
+.faq__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: start; */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background: #0F0F0F; */
+}
+.faq__answer-text {
+    color: #ffffff;
+    font-family: Roboto Flex;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+.faq__icon--minus,
+.faq__icon--plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid #333333;
+}
+
+.faq__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+}
+
+.faq__item {
+    background: #1A1A1A;
+    border-radius: 16px;
 }
