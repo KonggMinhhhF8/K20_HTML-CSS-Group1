@@ -37,15 +37,15 @@ body {
 
     font-family: "Roboto Mono";
     min-width: 157px;
-    display: inline-block;
-    height: var(--height);
-    border-radius: 10px;
-    border: 1px solid #ce7d63;
-    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    border-radius: 12px;
+    padding: 18px 24px;
     background-color: #ce7d63;
     color: #0f0f0f;
     text-align: center;
-    line-height: var(--height);
+    /* line-height: var(--height); */
     font-size: 1.8rem;
     font-weight: 500;
 }
@@ -686,6 +686,13 @@ a {
     align-items: center;
 }
 /* frequently -question */
+
+.faq {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
 .faq__question-text {
     color: var(--title-bg);
     font-family: Roboto Flex;
@@ -694,19 +701,12 @@ a {
 }
 /* answer-text */
 
-.faq__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* align-items: start; */
-    gap: 20px;
-    margin-top: 20px;
-}
 
 .faq-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* background: #0F0F0F; */
+    background: #0f0f0f;
 }
 .faq__answer-text {
     color: #ffffff;
@@ -735,6 +735,72 @@ a {
 }
 
 .faq__item {
-    background: #1A1A1A;
+    background: #1a1a1a;
     border-radius: 16px;
+}
+/* contact form */
+.faq-form {
+    background: #1a1a1a;
+    padding: 60px;
+;
+}
+.faq__form-title {
+    color: #f9efec;
+    font-family: Roboto Flex;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.contact-form__label {
+    color: #f3dfd8;
+    font-family: Roboto Flex;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.line {
+    background: #262626;
+}
+.contact-form {
+    margin-top: 50px;
+}
+.contact-form__group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.contact-form__input {
+    height: 75px;
+    border-radius: 10px;
+    border: none;
+    background: #0f0f0f;
+    padding: 24px;
+    font-family: Roboto Flex;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+.contact-form__textarea {
+    padding: 24px;
+    min-height: 172px;
+    border-radius: 10px;
+    background: #0f0f0f;
+    color: #676665;
+    font-family: Roboto Flex;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    resize: none;
+}
+
+.contact-form__button {
+    width: 100%;
+    margin-top: 50px;
+    background: var(--color-btn);
+    font-family: Roboto Flex;
+    border: none;
 }

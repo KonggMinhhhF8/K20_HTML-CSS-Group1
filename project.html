@@ -798,79 +798,140 @@
             <!-- frequently-question -->
 
             <div class="container">
-                <div class="faq__wrapper">
-                    <div class="faq-list">
-                        <!-- faq-one -->
-                        <div class="faq__item faq__item-active">
-                            <div class="faq__question">
-                                <p class="faq__question-text">
-                                    How long does it take to complete a web
-                                    development project?
-                                </p>
-                                <div class="faq__icon--minus">
-                                    <img src="./asset/icon/minus.png" alt="" />
+                <div class="faq">
+                    <!-- faq right -->
+                    <div class="faq__wrapper">
+                        <div class="faq-list">
+                            <!-- faq-one -->
+                            <div class="faq__item faq__item-active">
+                                <div class="faq__question">
+                                    <p class="faq__question-text">
+                                        How long does it take to complete a web
+                                        development project?
+                                    </p>
+                                    <div class="faq__icon--minus">
+                                        <img
+                                            src="./asset/icon/minus.png"
+                                            alt=""
+                                        />
+                                    </div>
                                 </div>
+                                <!-- <div class="faq__answer">
+                                    <p class="faq__answer-text">
+                                        The timeline varies depending on the
+                                        project's complexity and requirements. Our
+                                        team strives to deliver projects on time
+                                        while maintaining the highest quality
+                                        standards.
+                                    </p>
+                                </div> -->
                             </div>
-                            <div class="faq__answer">
-                                <p class="faq__answer-text">
-                                    The timeline varies depending on the
-                                    project's complexity and requirements. Our
-                                    team strives to deliver projects on time
-                                    while maintaining the highest quality
-                                    standards.
-                                </p>
-                            </div>
-                        </div>
 
-                        <!-- faq-two -->
-                        <div class="faq__item">
-                            <div class="faq__question">
-                                <p class="faq__question-text">
-                                    Can you handle large-scale mobile app
-                                    development projects?
-                                </p>
-                                <div class="faq__icon--plus">
-                                    <img src="./asset/icon/plus.png" alt="" />
+                            <!-- faq-two -->
+                            <div class="faq__item">
+                                <div class="faq__question">
+                                    <p class="faq__question-text">
+                                        Can you handle large-scale mobile app
+                                        development projects?
+                                    </p>
+                                    <div class="faq__icon--plus">
+                                        <img
+                                            src="./asset/icon/plus.png"
+                                            alt=""
+                                        />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- faq-three -->
-                        <div class="faq__item">
-                            <div class="faq__question">
-                                <p class="faq__question-text">
-                                    Can you integrate third-party APIs into our
-                                    mobile app?
-                                </p>
-                                <div class="faq__icon--plus">
-                                    <img src="./asset/icon/plus.png" alt="" />
+                            <!-- faq-three -->
+                            <div class="faq__item">
+                                <div class="faq__question">
+                                    <p class="faq__question-text">
+                                        Can you integrate third-party APIs into
+                                        our mobile app?
+                                    </p>
+                                    <div class="faq__icon--plus">
+                                        <img
+                                            src="./asset/icon/plus.png"
+                                            alt=""
+                                        />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- faq-four -->
-                        <div class="faq__item">
-                            <div class="faq__question">
-                                <p class="faq__question-text">
-                                    How do you ensure cross-platform
-                                    compatibility for mobile apps?
-                                </p>
-                                <div class="faq__icon--plus">
-                                    <img src="./asset/icon/plus.png" alt="" />
+                            <!-- faq-four -->
+                            <div class="faq__item">
+                                <div class="faq__question">
+                                    <p class="faq__question-text">
+                                        How do you ensure cross-platform
+                                        compatibility for mobile apps?
+                                    </p>
+                                    <div class="faq__icon--plus">
+                                        <img
+                                            src="./asset/icon/plus.png"
+                                            alt=""
+                                        />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- faq-five -->
-                        <div class="faq__item">
-                            <div class="faq__question">
-                                <p class="faq__question-text">
-                                    What is your approach to user experience
-                                    (UX) design?
-                                </p>
-                                <div class="faq__icon--plus">
-                                    <img src="./asset/icon/plus.png" alt="" />
+                            <!-- faq-five -->
+                            <div class="faq__item">
+                                <div class="faq__question">
+                                    <p class="faq__question-text">
+                                        What is your approach to user experience
+                                        (UX) design?
+                                    </p>
+                                    <div class="faq__icon--plus">
+                                        <img
+                                            src="./asset/icon/plus.png"
+                                            alt=""
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <!-- faq left -->
+                    <div class="faq-form">
+                        <h3 class="faq__form-title">Ask your question</h3>
+                        <span class="line"><hr /></span>
+
+                        <form action="" class="contact-form">
+                            <div class="contact-form__group">
+                                <label class="contact-form__label">Name</label>
+                                <input
+                                    type="text"
+                                    class="contact-form__input"
+                                    placeholder="Enter your name"
+                                    required
+                                />
+                            </div>
+                            <!-- email -->
+                            <div class="contact-form__group">
+                                <label class="contact-form__label">
+                                    EMAIL
+                                </label>
+                                <input
+                                    class="contact-form__input"
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    required
+                                />
+                            </div>
+                            <!-- your question -->
+                            <div class="contact-form__group">
+                                <label class="contact-form__label">
+                                    YOUR QUESTION
+                                </label>
+                                <textarea
+                                    class="contact-form__textarea"
+                                    placeholder="Enter Your Question Here ....."
+                                ></textarea>
+                            </div>
+                            <!-- button submit -->
+                            <button class="contact-form__button btn">
+                                SEND YOUR MESSAGE
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
