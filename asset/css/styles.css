@@ -25,7 +25,7 @@ body {
     width: 1820px;
     max-width: calc(100% - 50px);
     margin: 0 auto;
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
     border-radius: var(--radius, 16px);
 }
 
@@ -112,6 +112,8 @@ a {
     display: flex;
     align-items: center;
     padding: 50px 50px 50px 80px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
 }
 
 .hero__content {
@@ -269,21 +271,27 @@ a {
     text-transform: uppercase;
 }
 
+.project-title {
+    width: 1780px;
+    padding: 50px 300px 50px 50px;
+    background-color: var(--bg);
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
 .project-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 20px;
+    
 }
 .project-item {
-    width: 430px;
-    height: 364px;
     background-color: var(--bg);
     border-radius: 14px;
     padding: 40px;
+    flex-shrink: 0;
+
 }
 
 .feature-item__link {
-    position: relative;
     border: 2px solid transparent;
 }
 
@@ -303,14 +311,6 @@ a {
     border: 2px solid #333333;
     border-radius: 12px;
     margin-bottom: 80px;
-}
-
-.project-title {
-    width: 1780px;
-    padding: 50px 300px 50px 50px;
-    background-color: var(--bg);
-    margin-bottom: 20px;
-    border-radius: 16px;
 }
 
 .project-item__heading {
@@ -333,6 +333,8 @@ a {
 /* Showcase */
 .show-case {
     margin-top: 120px;
+    background: #1a1a1a;
+    border-radius: 16px;
 }
 .show-case__title {
     padding: 50px;
@@ -678,6 +680,8 @@ a {
 /* question */
 .question-top {
     margin-top: 120px;
+    background: #1a1a1a;
+    border-radius: 16px;
 }
 .question-top__title {
     padding: 50px;
@@ -688,9 +692,7 @@ a {
 /* frequently -question */
 
 .faq {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 20px;
+    display: flex;
     margin-top: 20px;
 }
 .faq__question-text {
@@ -701,12 +703,11 @@ a {
 }
 /* answer-text */
 
-
 .faq-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: #0f0f0f;
+
 }
 .faq__answer-text {
     color: #ffffff;
@@ -737,12 +738,13 @@ a {
 .faq__item {
     background: #1a1a1a;
     border-radius: 16px;
+    
+    
 }
 /* contact form */
 .faq-form {
     background: #1a1a1a;
     padding: 60px;
-;
 }
 .faq__form-title {
     color: #f9efec;
