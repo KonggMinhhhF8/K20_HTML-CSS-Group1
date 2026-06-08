@@ -1,7 +1,7 @@
 /* Laptop */
-@media screen and (max-width: 1360px) and (min-width: 768px) {
+@media (max-width: 1360px) and (min-width: 768px) {
     .container {
-        max-width: 1360px;
+        width: 1360px;
         margin: 0 auto;
     }
     .navbar__link {
@@ -26,7 +26,7 @@
     .title-up {
         gap: 13px;
     }
-    .hero__heading{
+    .hero__heading {
         font-size: 5.8rem;
     }
     .hero__desc {
@@ -375,23 +375,16 @@
 }
 /* Mobie */
 
-@media screen and (max-width: 560px) {
-     .container {
-        max-width: 358px;
+@media (max-width: 575px) {
+    .container {
+        width: 358px;
         margin: 0 auto;
     }
-     .navbar__list,
-    .header-action {
-        display: none;
-    }
-
     .header-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu-mobile {
-        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 70%;
     }
 }
