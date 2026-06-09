@@ -16,8 +16,7 @@ body {
     font-family: "Roboto Flex", sans-serif;
     width: 1920px;
     background: #0f0f0f;
-    padding-top: 30px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 /* Common */
@@ -994,15 +993,6 @@ a {
     margin-bottom: 20px;
     height: 337px;
 }
-.icon-media {
-    background-color: #1f1f1f;
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
 
 .icon-media {
     background-color: #1f1f1f;
@@ -1109,7 +1099,7 @@ a {
         margin-bottom: 1.8rem;
         font-family: Roboto Flex;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: normal;
     }
 }
