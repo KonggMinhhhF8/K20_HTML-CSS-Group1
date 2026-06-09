@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Project NexGen</title>
         <!-- Favicon -->
         <link
@@ -104,7 +105,7 @@
             <!-- Header Top -->
             <div class="header-top">
                 <!-- Logo -->
-                <a href="#!">
+                <a href="#!" class="logo-wrapper">
                     <div class="logo">
                         <img src="./asset/image/Logo.png" alt="logo" />
                     </div>
@@ -117,32 +118,39 @@
                 <input type="checkbox" id="drawer-input" hidden />
                 <!-- Navbar -->
                 <nav class="navbar">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">HOME</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">SERVICES</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">PROJECTS</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">ABOUT</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">CAREERS</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">BLOGS</a>
-                        </li>
-                    </ul>
-                    <!-- Action -->
+                    <div class="nav-wrapper">
+                        <a href="#!" class="nav-logo">
+                            <div class="logo">
+                                <img src="./asset/image/Logo.png" alt="logo" />
+                            </div>
+                        </a>
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">HOME</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">SERVICES</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">PROJECTS</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">ABOUT</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">CAREERS</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">BLOGS</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="header-action">
                         <div class="btn header-action__btn">
                             <a href="#!" class="header-contact">CONTACT US</a>
                         </div>
                     </div>
+                    <!-- Action -->
                 </nav>
             </div>
         </div>
@@ -165,6 +173,15 @@
                         </div>
                     </div>
                     <h1 class="hero__heading">DIGITAL VISION</h1>
+                    <!-- hero__cta--mobile -->
+
+                    <div class="hero__cta--mobile">
+                        <span class="hero__cta--icon">
+                            <img src="./asset/icon/arraw-straight.png" alt="" />
+                        </span>
+                        <a href="#!" class="hero-link">START A PROJECT</a>
+                    </div>
+
                     <p class="hero__desc">
                         At NexGen, we are committed to empowering your digital
                         vision with innovative solutions tailored to your unique
@@ -341,61 +358,185 @@
             <!-- show-case-card 1 -->
             <div class="container" style="--radius: 20px">
                 <div class="show-case__card">
+                    <!-- show-case__title--mobile -->
+                    <div class="show-case__title show-case__title--mobile">
+                        <h2 class="section-heading">Projects Showcase</h2>
+                    </div>
+                    <!-- show-case__list--mobile -->
+                    <ul class="show-case__list show-case__list--mobile">
+                        <li class="show-case__item show-case__item--active">
+                            <a href="#!" class="show-case__tab--link"
+                                >Web Development</a
+                            >
+                        </li>
+                        <li class="show-case__item">
+                            <a href="#!" class="show-case__tab--link"
+                                >Web Design</a
+                            >
+                        </li>
+                        <li class="show-case__item">
+                            <a href="#!" class="show-case__tab--link"
+                                >Marketing</a
+                            >
+                        </li>
+                    </ul>
+
                     <!-- card 1 -->
-                    <div class="show-case__info">
-                        <div class="show-case__top">
-                            <div class="show-case__left">
-                                <div class="show-case__icon">
-                                    <img
-                                        src="./asset/icon/Magic Stick 2.png"
-                                        alt=""
-                                    />
+                    <!--show-case__preview--mobile  -->
+                    <div class="show-case__body--mobile">
+                        <div
+                            class="show-case__preview show-case__preview--mobile"
+                        >
+                            <img src="./asset/image/show-case-img.png" alt="" />
+                        </div>
+                        <div class="show-case__info">
+                            <div class="show-case__top">
+                                <div class="show-case__left">
+                                    <div class="show-case__icon">
+                                        <img
+                                            src="./asset/icon/Magic Stick 2.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <h3 class="show-case__name">
+                                        Zenith Fitness App
+                                    </h3>
                                 </div>
-                                <h3 class="show-case__name">
-                                    Zenith Fitness App
-                                </h3>
+                                <div class="detail__tag detail__tag--show-case">
+                                    <div class="detail__icon">
+                                        <img
+                                            src="./asset/icon/arraw.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="info-detail">Details</div>
+                                </div>
                             </div>
-                            <div class="detail__tag">
+                            <div class="show-case__badge">
+                                <div class="show-case__meta">
+                                    <span class="show-case__meta--label"
+                                        >Category</span
+                                    >
+                                    <span class="show-case__meta-dot"
+                                        ><img
+                                            src="./asset/icon/Shape.png"
+                                            alt=""
+                                    /></span>
+                                    <span class="show-case__tag"
+                                        >Mobile App Development</span
+                                    >
+                                </div>
+                                <div class="show-case__meta">
+                                    <span class="show-case__meta--label"
+                                        >Time Taken</span
+                                    >
+                                    <span class="show-case__meta-dot"
+                                        ><img
+                                            src="./asset/icon/Shape.png"
+                                            alt=""
+                                    /></span>
+                                    <span class="show-case__tag">6 months</span>
+                                </div>
+                            </div>
+                            <div class="show-case__desc">
+                                <p class="project-item__desc">
+                                    An all-in-one health and wellness app that
+                                    offers personalized fitness plans, nutrition
+                                    guidance
+                                </p>
+                            </div>
+                            <!-- detail-tag--mobile -->
+
+                            <div class="detail__tag detail-tag--mobile">
                                 <div class="detail__icon">
                                     <img src="./asset/icon/arraw.png" alt="" />
                                 </div>
                                 <div class="info-detail">Details</div>
                             </div>
                         </div>
-                        <div class="show-case__badge">
-                            <div class="show-case__meta">
-                                <span class="show-case__meta--label"
-                                    >Category</span
-                                >
-                                <span class="show-case__meta-dot"
-                                    ><img src="./asset/icon/Shape.png" alt=""
-                                /></span>
-                                <span class="show-case__tag"
-                                    >Mobile App Development</span
-                                >
-                            </div>
-                            <div class="show-case__meta">
-                                <span class="show-case__meta--label"
-                                    >Time Taken</span
-                                >
-                                <span class="show-case__meta-dot"
-                                    ><img src="./asset/icon/Shape.png" alt=""
-                                /></span>
-                                <span class="show-case__tag">6 months</span>
-                            </div>
+                    </div>
+                    <!-- -------------------------------- -->
+                    <div class="show-case__body--mobile show-case__body">
+                        <div
+                            class="show-case__preview show-case__preview--mobile"
+                        >
+                            <img
+                                src="./asset/image/show-case-image.png"
+                                alt=""
+                            />
                         </div>
-                        <div class="show-case__desc">
-                            <p class="project-item__desc">
-                                An all-in-one health and wellness app that
-                                offers personalized fitness plans, nutrition
-                                guidance
-                            </p>
+                        <div class="show-case__info">
+                            <div class="show-case__top">
+                                <div class="show-case__left">
+                                    <div class="show-case__icon">
+                                        <img
+                                            src="./asset/icon/Balloon.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <h3 class="show-case__name">
+                                        A-Aura Ecommerce
+                                    </h3>
+                                </div>
+                                <div class="detail__tag detail__tag--show-case">
+                                    <div class="detail__icon">
+                                        <img
+                                            src="./asset/icon/arraw.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="info-detail">Details</div>
+                                </div>
+                            </div>
+                            <div class="show-case__badge">
+                                <div class="show-case__meta">
+                                    <span class="show-case__meta--label"
+                                        >Category</span
+                                    >
+                                    <span class="show-case__meta-dot"
+                                        ><img
+                                            src="./asset/icon/Shape.png"
+                                            alt=""
+                                    /></span>
+                                    <span class="show-case__tag"
+                                        >Web Design & Development</span
+                                    >
+                                </div>
+                                <div class="show-case__meta">
+                                    <span class="show-case__meta--label"
+                                        >Time Taken</span
+                                    >
+                                    <span class="show-case__meta-dot"
+                                        ><img
+                                            src="./asset/icon/Shape.png"
+                                            alt=""
+                                    /></span>
+                                    <span class="show-case__tag">3 months</span>
+                                </div>
+                            </div>
+                            <div class="show-case__desc">
+                                <p class="project-item__desc">
+                                    A complete overhaul of a corporate website
+                                    to enhance its brand identity and user
+                                    experience.
+                                </p>
+                                <div class="detail__tag detail-tag--mobile">
+                                    <div class="detail__icon">
+                                        <img
+                                            src="./asset/icon/arraw.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="info-detail">Details</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- card 2 -->
                     <div class="show-case__preview">
                         <img src="./asset/image/show-case-img.png" alt="" />
                     </div>
+
                     <!-- card 3 -->
                     <div class="show-case__sidebar">
                         <!-- show-case-tech -->
@@ -466,133 +607,171 @@
                             <div class="btn show-case__action">Book A Call</div>
                         </div>
                     </div>
+                    <!-- view al mobile -->
+                    <div class="view-all">
+                        <div class="detail__icon detail__icon--view">
+                            <img src="./asset/icon/arraw.png" alt="" />
+                        </div>
+                        <p class="view-all__desc">VIEW ALL</p>
+                    </div>
                 </div>
             </div>
             <!-- show-case-card 2 -->
-            <div class="container" style="--radius: 20px">
-                <div class="show-case__card">
-                    <!-- card 1 -->
-                    <div class="show-case__info">
-                        <div class="show-case__top">
-                            <div class="show-case__left">
-                                <div class="show-case__icon">
-                                    <img
-                                        src="./asset/icon/Balloon.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <h3 class="show-case__name">
-                                    A-Aura Ecommerce
-                                </h3>
-                            </div>
-                            <div class="detail__tag">
-                                <div class="detail__icon">
-                                    <img src="./asset/icon/arraw.png" alt="" />
-                                </div>
-                                <div class="info-detail">Details</div>
-                            </div>
-                        </div>
-                        <div class="show-case__badge">
-                            <div class="show-case__meta">
-                                <span class="show-case__meta--label"
-                                    >Category</span
-                                >
-                                <span class="show-case__meta-dot"
-                                    ><img src="./asset/icon/Shape.png" alt=""
-                                /></span>
-                                <span class="show-case__tag"
-                                    >Web Design & Development</span
-                                >
-                            </div>
-                            <div class="show-case__meta">
-                                <span class="show-case__meta--label"
-                                    >Time Taken</span
-                                >
-                                <span class="show-case__meta-dot"
-                                    ><img src="./asset/icon/Shape.png" alt=""
-                                /></span>
-                                <span class="show-case__tag">3 months</span>
-                            </div>
-                        </div>
-                        <div class="show-case__desc">
-                            <p class="project-item__desc">
-                                A complete overhaul of a corporate website to
-                                enhance its brand identity and user experience.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- card 2 -->
-                    <div class="show-case__preview">
-                        <img src="./asset/image/show-case-image.png" alt="" />
-                    </div>
-                    <!-- card 3 -->
-                    <div class="show-case__sidebar">
-                        <!-- show-case-tech -->
-                        <div class="show-case__sidebar--top">
-                            <div class="showcase__technologies">
-                                <h4 class="showcase__sidebar-title">
-                                    Technologies Used
-                                </h4>
-                                <div class="showcase__tech-list">
-                                    <ul class="tech-list">
-                                        <li class="tech-item">WordPress</li>
-                                        <li class="tech-item">PHP</li>
-                                        <li class="tech-item">HTML5</li>
-                                        <li class="tech-item">CSS3</li>
-                                        <li class="tech-item">JavaScript</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- info team -->
-                        <div class="showcase__team">
-                            <div class="showcase__team--info">
-                                <h4 class="showcase__sidebar-title">
-                                    Team Members
-                                </h4>
+            <div class="show-case__card--web">
+                <div class="container" style="--radius: 20px">
+                    <div class="show-case__card">
+                        <!-- card 1 -->
 
-                                <div class="avatar-team">
-                                    <div class="showcase__avatars">
-                                        <img
-                                            class="showcase__avatar"
-                                            src="./asset/image/team 2/avar 1.png"
-                                            alt=""
-                                        />
+                        <div class="show-case__body--mobile">
+                            <div
+                                class="show-case__preview show-case__preview--mobile"
+                            >
+                                <img
+                                    src="./asset/image/show-case-image.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="show-case__info">
+                                <div class="show-case__top">
+                                    <div class="show-case__left">
+                                        <div class="show-case__icon">
+                                            <img
+                                                src="./asset/icon/Balloon.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <h3 class="show-case__name">
+                                            A-Aura Ecommerce
+                                        </h3>
                                     </div>
-                                    <div class="showcase__avatars">
-                                        <img
-                                            class="showcase__avatar"
-                                            src="./asset/image/team 2/avar 2.png"
-                                            alt=""
-                                        />
+                                    <div class="detail__tag">
+                                        <div class="detail__icon">
+                                            <img
+                                                src="./asset/icon/arraw.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="info-detail">Details</div>
                                     </div>
-                                    <div class="showcase__avatars">
-                                        <img
-                                            class="showcase__avatar"
-                                            src="./asset/image/team 2/avar 3.png"
-                                            alt=""
-                                        />
+                                </div>
+                                <div class="show-case__badge">
+                                    <div class="show-case__meta">
+                                        <span class="show-case__meta--label"
+                                            >Category</span
+                                        >
+                                        <span class="show-case__meta-dot"
+                                            ><img
+                                                src="./asset/icon/Shape.png"
+                                                alt=""
+                                        /></span>
+                                        <span class="show-case__tag"
+                                            >Web Design & Development</span
+                                        >
                                     </div>
-                                    <div class="showcase__avatars">
-                                        <img
-                                            class="showcase__avatar"
-                                            src="./asset/image/team 2/avar 4.png"
-                                            alt=""
-                                        />
+                                    <div class="show-case__meta">
+                                        <span class="show-case__meta--label"
+                                            >Time Taken</span
+                                        >
+                                        <span class="show-case__meta-dot"
+                                            ><img
+                                                src="./asset/icon/Shape.png"
+                                                alt=""
+                                        /></span>
+                                        <span class="show-case__tag"
+                                            >3 months</span
+                                        >
                                     </div>
-                                    <div class="showcase__avatars">
-                                        <img
-                                            class="showcase__avatar"
-                                            src="./asset/image/team 2/avar 5.png"
-                                            alt=""
-                                        />
-                                    </div>
+                                </div>
+                                <div class="show-case__desc">
+                                    <p class="project-item__desc">
+                                        A complete overhaul of a corporate
+                                        website to enhance its brand identity
+                                        and user experience.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <!-- book a call -->
-                        <div class="show-case__btn">
-                            <div class="btn show-case__action">Book A Call</div>
+
+                        <!-- card 2 -->
+                        <div class="show-case__preview">
+                            <img
+                                src="./asset/image/show-case-image.png"
+                                alt=""
+                            />
+                        </div>
+                        <!-- card 3 -->
+                        <div class="show-case__sidebar">
+                            <!-- show-case-tech -->
+                            <div class="show-case__sidebar--top">
+                                <div class="showcase__technologies">
+                                    <h4 class="showcase__sidebar-title">
+                                        Technologies Used
+                                    </h4>
+                                    <div class="showcase__tech-list">
+                                        <ul class="tech-list">
+                                            <li class="tech-item">WordPress</li>
+                                            <li class="tech-item">PHP</li>
+                                            <li class="tech-item">HTML5</li>
+                                            <li class="tech-item">CSS3</li>
+                                            <li class="tech-item">
+                                                JavaScript
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- info team -->
+                            <div class="showcase__team">
+                                <div class="showcase__team--info">
+                                    <h4 class="showcase__sidebar-title">
+                                        Team Members
+                                    </h4>
+
+                                    <div class="avatar-team">
+                                        <div class="showcase__avatars">
+                                            <img
+                                                class="showcase__avatar"
+                                                src="./asset/image/team 2/avar 1.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="showcase__avatars">
+                                            <img
+                                                class="showcase__avatar"
+                                                src="./asset/image/team 2/avar 2.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="showcase__avatars">
+                                            <img
+                                                class="showcase__avatar"
+                                                src="./asset/image/team 2/avar 3.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="showcase__avatars">
+                                            <img
+                                                class="showcase__avatar"
+                                                src="./asset/image/team 2/avar 4.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="showcase__avatars">
+                                            <img
+                                                class="showcase__avatar"
+                                                src="./asset/image/team 2/avar 5.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- book a call -->
+                            <div class="show-case__btn">
+                                <div class="btn show-case__action">
+                                    Book A Call
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -642,7 +821,9 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="detail__tag">
+                                <div
+                                    class="detail__tag detail__tag--testimonial"
+                                >
                                     <div class="detail__icon rotate-icon">
                                         <img
                                             src="./asset/icon/arraw.png"
@@ -683,7 +864,7 @@
                                         <p class="job-title">Art Director</p>
                                     </div>
                                 </div>
-                                <div class="detail__tag">
+                                <div class="detail__tag detail__tag--testimonial">
                                     <div class="detail__icon rotate-icon">
                                         <img
                                             src="./asset/icon/arraw.png"
@@ -726,7 +907,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="detail__tag">
+                                <div class="detail__tag detail__tag--testimonial">
                                     <div class="detail__icon rotate-icon">
                                         <img
                                             src="./asset/icon/arraw.png"
@@ -768,7 +949,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="detail__tag">
+                                <div class="detail__tag detail__tag--testimonial">
                                     <div class="detail__icon rotate-icon">
                                         <img
                                             src="./asset/icon/arraw.png"
