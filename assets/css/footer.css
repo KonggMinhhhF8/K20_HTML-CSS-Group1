@@ -320,7 +320,12 @@
     .footer .social-left .social-card-mobile a {
         flex: 1 0 calc((100% - 40px) / 4);
         height: 56px;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: var(--dark-12);
+        border: 1px solid var(--dark-20);
     }
 
     .footer .social-left .social-card {
