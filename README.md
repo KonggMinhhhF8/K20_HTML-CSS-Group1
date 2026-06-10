@@ -7,8 +7,8 @@ Dự án cuối module F8-K20 HTML CSS
 ├─ assets/        // Thư mục chứa các tài nguyên
   ├─ about-assets/            // tài nguyên css, img, icon, ... riêng cho trang about
   ├─ home-assets/             // tài nguyên css, img, icon, ... riêng cho trang home
-  ├─ projects-assest/         // tài nguyên css, img, icon, ... riêng cho trang projects
-  ├─ services-assest/         // tài nguyên css, img, icon, ... riêng cho trang services
+  ├─ projects-assets/         // tài nguyên css, img, icon, ... riêng cho trang projects
+  ├─ services-assets/         // tài nguyên css, img, icon, ... riêng cho trang services
 ├─ pages          // Thư mục chứa các trang HTML
   ├─ about.html          // trang about 
   ├─ projects.html       // trang project 
