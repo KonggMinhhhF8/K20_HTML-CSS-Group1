@@ -464,7 +464,17 @@
         }
     }
     .navbar__close {
-        color: #fff;
+        position: absolute;display: flex;
+        justify-content: center;
+        align-items: center;
+       top: 15px;
+       right: 20px;
+
+        width:30px;
+        height: 30px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        color: #0f0f0f;
         cursor: pointer;
         font-size: 2rem;
         transition: 0.3s;
