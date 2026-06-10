@@ -1,0 +1,2735 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>tailwind</title>
+
+        <!-- Embed Fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <!-- Styles Css -->
+        <link rel="stylesheet" href="../assets/css/services.css" />
+    </head>
+    <body id="header" class="bg-[#0F0F0F]">
+        <div
+            class="px-4 pt-10 pb-5 lg:px-10 lg:pt-[30px] lg:pb-[40px] 2xl:px-[50px] 2xl:pb-[50px] 2xl:pt-[30px]"
+        >
+            <!-- Check Menu -->
+
+            <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+            <!-- Header -->
+
+            <!-- Header di chuyển khi cuộn  -->
+
+            <header
+                class="sticky top-0 z-[300] flex items-center justify-between p-[14px] lg:p-5 2xl:p-6 rounded-[10px] lg:rounded-[14px] 2xl:rounded-2xl bg-[#1A1A1A]"
+            >
+                <a
+                    href="#header"
+                    class="w-[86.47px] h-4 lg:w-[97px] lg:h-[18px] 2xl:w-[130px] lg:ml-[26px] 2xl:ml-9 2xl:h-6"
+                >
+                    <img src="../assets/img/services/Logo.png" alt="Logo" />
+                </a>
+
+                <!-- Hamburger Menu -->
+
+                <label class="lg:hidden cursor-pointer" for="menu-toggle"
+                    ><img src="../assets/icon/services/menu.svg" alt="Menu"
+                /></label>
+
+                <!-- Navigation Desktop -->
+                <nav class="lg:flex hidden lg:bg-[#1A1A1A]">
+                    <ul
+                        class="flex gap-[14px] font-mono font-medium uppercase text-[#81807E]"
+                    >
+                        <li
+                            class="flex items-center justify-center lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
+                        >
+                            <a
+                                href="#!"
+                                class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
+                                >Home</a
+                            >
+                        </li>
+                        <li
+                            class="flex items-center justify-center lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
+                        >
+                            <a
+                                href="#!"
+                                class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300 text-[#E7BEB1]"
+                                >Services</a
+                            >
+                        </li>
+                        <li
+                            class="flex items-center justify-center lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
+                        >
+                            <a
+                                href="#!"
+                                class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
+                                >Projects</a
+                            >
+                        </li>
+                        <li
+                            class="flex items-center justify-center lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
+                        >
+                            <a
+                                href="#!"
+                                class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
+                                >About</a
+                            >
+                        </li>
+                        <li
+                            class="flex items-center justify-center lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
+                        >
+                            <a
+                                href="#!"
+                                class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
+                                >Careers</a
+                            >
+                        </li>
+                        <li
+                            class="flex items-center justify-center lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
+                        >
+                            <a
+                                href="#!"
+                                class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
+                                >Blogs</a
+                            >
+                        </li>
+                        <li
+                            class="flex items-center justify-center lg:text-sm 2xl:text-lg bg-[#CE7D63] text-[#0F0F0F] rounded-[10px]"
+                        >
+                            <a
+                                href="#!"
+                                class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:opacity-70 transition-colors duration-300"
+                                >Contact Us</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Navigation Mobile -->
+
+            <nav
+                class="fixed z-[200] font-mono h-screen top-[41px] w-[280px] p-6 right-0 translate-x-full peer-checked:translate-x-0 lg:hidden bg-[#1A1A1A] transition-transform duration-300 ease-in-out"
+            >
+                <ul class="flex gap-5 flex-col mt-32 text-[#81807E]">
+                    <li
+                        class="flex justify-center bg-[#0F0F0F] rounded-xl shadow-lg"
+                    >
+                        <a
+                            href="#!"
+                            class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-all duration-300"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
+                        <a
+                            href="#!"
+                            class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-all duration-300"
+                            >Services</a
+                        >
+                    </li>
+                    <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
+                        <a
+                            href="#!"
+                            class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-all duration-300"
+                            >Projects</a
+                        >
+                    </li>
+                    <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
+                        <a
+                            href="#!"
+                            class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-all duration-300"
+                            >About</a
+                        >
+                    </li>
+                    <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
+                        <a
+                            href="#!"
+                            class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-all duration-300"
+                            >Careers</a
+                        >
+                    </li>
+                    <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
+                        <a
+                            href="#!"
+                            class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-all duration-300"
+                            >Blogs</a
+                        >
+                    </li>
+                    <li
+                        class="flex justify-center bg-[#CE7D63] rounded-xl whitespace-nowrap"
+                    >
+                        <a
+                            href="#!"
+                            class="hover:bg-red-500 active:text-[#E7BEB1] text-[#0F0F0F] px-20 py-4 transition-all duration-300"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Overlay -->
+            <label
+                for="menu-toggle"
+                class="fixed z-[100] inset-0 bg-[#1A1A1A] opacity-0 invisible peer-checked:visible peer-checked:opacity-70 transition-opacity duration-300"
+            ></label>
+
+            <!-- Main -->
+            <main class="">
+                <!-- Hero -->
+                <section class="mt-5 lg:mt-[50px] 2xl:mt-[50px]">
+                    <div
+                        class="lg:flex lg:items-center lg:gap-4 2xl:gap-5 lg:h-[498px] 2xl:h-[592px]"
+                    >
+                        <!-- Content -->
+                        <div
+                            class="lg:w-[67%] lg:flex flex-col pt-7.5 pb-4 lg:h-full bg-[#1A1A1A] rounded-xl"
+                        >
+                            <!-- Mobile Title -->
+                            <div
+                                class="lg:flex lg:mt-12.5 lg:mx-15 lg:mb-5 2xl:mt-17.5 2xl:mx-20 items-center"
+                            >
+                                <h1
+                                    class="font-semibold text-[28px] mx-6 mb-5 lg:mx-0 lg:mb-0 lg:text-[58px] 2xl:text-[78px] text-[#F9EFEC] whitespace-nowrap uppercase"
+                                >
+                                    Our Comprehensive <br />
+                                    Digital Solutions
+                                </h1>
+
+                                <!-- Button -->
+
+                                <a
+                                    href="#!"
+                                    class="group flex ml-4 mb-5 lg:ml-3 lg:mb-0 lg:-translate-y-3/4 2xl:-translate-y-3/4"
+                                >
+                                    <img
+                                        class="2xl:w-[262px] 2xl:h-[77px] transition-all duration-300 group-hover:scale-110"
+                                        src="../assets/icon/services/button-hero.svg"
+                                        alt="Button Link"
+                                    />
+                                </a>
+                            </div>
+
+                            <!-- Hero Desc -->
+                            <p
+                                class="mb-8 lg:mx-15 lg:mb-19.5 2xl:mx-20 2xl:mb-22.5 text-sm mx-6 lg:text-base 2xl:text-lg text-[#676665]"
+                            >
+                                At NexGen, we offer a comprehensive suite of
+                                digital solutions designed to propel your
+                                business to new heights in the digital realm.
+                                With a team of skilled professionals,
+                                cutting-edge technologies, and a passion for
+                                innovation
+                            </p>
+
+                            <!-- Marquee -->
+                            <div
+                                class="mx-4 2xl:mx-5 bg-[#0F0F0F] rounded-lg overflow-hidden"
+                            >
+                                <div class="marqee">
+                                    <div
+                                        class="flex items-center py-[14px] text-sm 2xl:text-xl text-[#676665] font-mono uppercase"
+                                    >
+                                        <span
+                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                            >Digital Marketing</span
+                                        >
+                                        <span
+                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                        ></span>
+                                        <span
+                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                            >Website Design</span
+                                        >
+                                        <span
+                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                        ></span>
+                                        <span
+                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                            >Branding</span
+                                        >
+                                        <span
+                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                        ></span>
+                                        <span
+                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                            >Website Development</span
+                                        >
+                                        <span
+                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                        ></span>
+                                        <span
+                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                            >Mobile App Development</span
+                                        >
+                                        <span
+                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                        ></span>
+                                        <span
+                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                            >Digital Marketing</span
+                                        >
+                                        <span
+                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                        ></span>
+                                        <span
+                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                            >Website Design</span
+                                        >
+                                        <span
+                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                        ></span>
+                                        <span
+                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                            >Branding</span
+                                        >
+                                        <span
+                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                        ></span>
+                                        <span
+                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                            >Website Development</span
+                                        >
+                                        <span
+                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                        ></span>
+                                        <span
+                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                            >Mobile App Development</span
+                                        >
+                                        <span
+                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                        ></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Media -->
+                        <figure
+                            class="lg:w-[33%] lg:h-full mt-4 lg:mt-0 hover:scale-102 transition-all duration-300"
+                        >
+                            <a href="">
+                                <img
+                                    class="size-full"
+                                    src="../assets/img/services/brain-tree.png"
+                                    alt="Brain Tree"
+                                />
+                            </a>
+                        </figure>
+                    </div>
+                </section>
+
+                <!-- Our Services -->
+
+                <section
+                    class="mt-[50px] lg:mt-20 2xl:mt-30 rounded-2xl lg:rounded-[20px] 2xl:rounded-3xl border-2 border-[#1F1F1F] overflow-hidden"
+                >
+                    <!-- Title -->
+
+                    <h2
+                        class="m-[10px] 2xl:m-5 p-5 lg:p-10 2xl:p-[50px] text-[#F9EFEC] text-[28px] lg:text-[38px] 2xl:text-5xl bg-[#1A1A1A] rounded-[14px] lg:rounded-2xl font-semibold leading-none uppercase"
+                    >
+                        Our Services
+                    </h2>
+
+                    <!-- Card -->
+
+                    <div
+                        class="grid lg:grid-cols-2 pb-[10px] 2xl:pb-5 gap-[10px] 2xl:gap-5 px-[10px] 2xl:px-5 bg-[#0F0F0F]"
+                    >
+                        <!-- Card 1 -->
+                        <!-- Right Card -->
+
+                        <article
+                            class="pb-6 lg:pb-0 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
+                        >
+                            <div
+                                class="px-6 pt-6 lg:px-15 lg:py-20.5 leading-[150%]"
+                            >
+                                <!--  Card Title -->
+                                <div
+                                    class="flex gap-[14px] font-medium items-center lg:justify-between text-[#F9EFEC]"
+                                >
+                                    <!-- Card Icon -->
+                                    <div
+                                        class="flex gap-[14px] text-xl lg:text-[22px] 2xl:text-3xl items-center"
+                                    >
+                                        <img
+                                            class="lg:size-[56px] 2xl:size-[66px]"
+                                            src="../assets/icon/services/web-design.svg"
+                                            alt="Web Design"
+                                        />
+
+                                        <h3 class="uppercase">Web Design</h3>
+                                    </div>
+
+                                    <!-- Card Link -->
+                                    <a
+                                        href="#!"
+                                        class="gap-2 items-center hidden lg:flex"
+                                    >
+                                        <img
+                                            class="arrow-link lg:size-10 2xl:size-[52px]"
+                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            alt="Arrow Link"
+                                        />
+
+                                        <span
+                                            class="font-mono text-base 2xl:text-xl uppercase"
+                                            >Book A Call
+                                        </span>
+                                    </a>
+                                </div>
+                                <!--  Card Body-->
+                                <span
+                                    class="lg:hidden flex mt-[20px] mb-[6px] text-[#F9EFEC] uppercase"
+                                    >Starts From $1,500</span
+                                >
+                                <!-- Card Desc -->
+                                <p
+                                    class="lg:mb-4 lg:mt-10 2xl:mt-[50px] 2xl:mb-5 text-[#B3B3B2] lg:text-base 2xl:text-lg"
+                                >
+                                    Our Web Design service is all about creating
+                                    visually stunning and user-friendly websites
+                                    that leave a lasting.
+                                </p>
+
+                                <!-- Card Btn Mobile -->
+
+                                <a
+                                    href="#!"
+                                    class="btn-primary font-mono lg:hidden flex items-center justify-center mt-[20px] py-[14px] bg-[#CE7D63] rounded-lg uppercase"
+                                >
+                                    View all Projects
+                                </a>
+
+                                <span
+                                    class="hidden lg:flex justify-end text-[22px] 2xl:text-3xl font-medium text-[#F9EFEC] uppercase"
+                                    >Starts From $1,500</span
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Card 2 -->
+                        <!-- Left Card -->
+
+                        <article
+                            class="hidden lg:grid pb-6 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
+                        >
+                            <div class="flex hidden p-[30px] 2xl:p-10 lg:block">
+                                <!-- Left Card Title  -->
+                                <div
+                                    class="flex items-center justify-between font-medium uppercase"
+                                >
+                                    <h3
+                                        class="text-[#F9EFEC] text-xl 2xl:text-2xl uppercase"
+                                    >
+                                        Web Design Projects
+                                    </h3>
+
+                                    <a
+                                        href="#!"
+                                        class="flex items-center gap-2"
+                                    >
+                                        <img
+                                            class="arrow-link 2xl:size-[68px]"
+                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            alt="Arrow Link"
+                                        />
+
+                                        <span
+                                            class="text-[#B3B3B2] text-base 2xl:text-xl leading-[150%]"
+                                            >View All</span
+                                        >
+                                    </a>
+                                </div>
+
+                                <!-- Left Card Media -->
+                                <figure class="flex gap-[10px] mt-5 2xl:mt-6">
+                                    <a
+                                        href="#!"
+                                        class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
+                                    >
+                                        <img
+                                            class="block size-full border border-[#333333] rounded-[10px] object-cover"
+                                            src="../assets/img/services/our-img.png"
+                                            alt="Projects1"
+                                        />
+
+                                        <img
+                                            class="absolute bottom-5 left-5"
+                                            src="../assets/icon/services/open-our.svg"
+                                            alt=""
+                                        />
+                                    </a>
+
+                                    <a
+                                        href="#!"
+                                        class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
+                                    >
+                                        <img
+                                            class="block size-full border border-[#333333] rounded-[10px] object-cover"
+                                            src="../assets/img/services/our-img2.png"
+                                            alt="Projects2"
+                                        />
+                                        <img
+                                            class="absolute bottom-5 left-5"
+                                            src="../assets/icon/services/open-our.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </figure>
+                            </div>
+                        </article>
+
+                        <!-- Card 3 -->
+                        <!-- Right Card -->
+
+                        <article
+                            class="pb-6 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
+                        >
+                            <div
+                                class="px-6 pt-6 lg:px-15 lg:py-20.5 leading-[150%]"
+                            >
+                                <!--  Card Title -->
+                                <div
+                                    class="flex gap-[14px] font-medium items-center lg:justify-between text-[#F9EFEC]"
+                                >
+                                    <!-- Card Icon -->
+                                    <div
+                                        class="flex gap-[14px] text-xl lg:text-[22px] 2xl:text-3xl items-center"
+                                    >
+                                        <img
+                                            class="lg:size-[56px] 2xl:size-[66px]"
+                                            src="../assets/icon/services/mobile-app.svg"
+                                            alt="Mobile App Development"
+                                        />
+
+                                        <h3 class="uppercase">
+                                            Mobile App Development
+                                        </h3>
+                                    </div>
+
+                                    <!-- Card Link -->
+                                    <a
+                                        href="#!"
+                                        class="gap-2 items-center hidden lg:flex"
+                                    >
+                                        <img
+                                            class="arrow-link lg:size-10 2xl:size-[52px]"
+                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            alt="Arrow Link"
+                                        />
+
+                                        <span
+                                            class="font-mono text-base 2xl:text-xl uppercase"
+                                            >Book A Call
+                                        </span>
+                                    </a>
+                                </div>
+                                <!--  Card Body-->
+                                <span
+                                    class="lg:hidden flex mt-[20px] mb-[6px] text-[#F9EFEC] uppercase"
+                                    >Starts From $1,500</span
+                                >
+                                <!-- Card Desc -->
+                                <p
+                                    class="lg:mb-4 lg:mt-10 2xl:mt-[50px] 2xl:mb-5 text-[#B3B3B2] lg:text-base 2xl:text-lg"
+                                >
+                                    With our Mobile App Development service, we
+                                    harness the power of mobile technology to
+                                    create cutting-edge applications that engage
+                                    your customers on-the-go.
+                                </p>
+
+                                <!-- Card Btn Mobile -->
+
+                                <a
+                                    href="#!"
+                                    class="btn-primary font-mono lg:hidden flex items-center justify-center mt-[20px] py-[14px] bg-[#CE7D63] rounded-lg uppercase"
+                                >
+                                    View all Projects
+                                </a>
+
+                                <span
+                                    class="hidden lg:flex justify-end text-[22px] 2xl:text-3xl font-medium text-[#F9EFEC] uppercase"
+                                    >Starts From $2,500</span
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Card 4 -->
+                        <!-- Left Card -->
+
+                        <article
+                            class="hidden lg:grid pb-6 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
+                        >
+                            <div class="flex hidden p-[30px] 2xl:p-10 lg:block">
+                                <!-- Left Card Title  -->
+                                <div
+                                    class="flex items-center justify-between font-medium uppercase"
+                                >
+                                    <h3
+                                        class="text-[#F9EFEC] text-xl 2xl:text-2xl uppercase"
+                                    >
+                                        Mobile App Development Projects
+                                    </h3>
+
+                                    <a
+                                        href="#!"
+                                        class="flex items-center gap-2"
+                                    >
+                                        <img
+                                            class="arrow-link 2xl:size-[68px]"
+                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            alt="Arrow Link"
+                                        />
+
+                                        <span
+                                            class="text-[#B3B3B2] text-base 2xl:text-xl leading-[150%]"
+                                            >View All</span
+                                        >
+                                    </a>
+                                </div>
+
+                                <!-- Left Card Media -->
+                                <figure class="flex gap-[10px] mt-5 2xl:mt-6">
+                                    <a
+                                        href="#!"
+                                        class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
+                                    >
+                                        <img
+                                            class="block size-full border border-[#333333] rounded-[10px] object-cover"
+                                            src="../assets/img/services/our-img3.png"
+                                            alt="Projects3"
+                                        />
+
+                                        <img
+                                            class="absolute bottom-5 left-5"
+                                            src="../assets/icon/services/open-our.svg"
+                                            alt=""
+                                        />
+                                    </a>
+
+                                    <a
+                                        href="#!"
+                                        class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
+                                    >
+                                        <img
+                                            class="block size-full border border-[#333333] rounded-[10px] object-cover"
+                                            src="../assets/img/services/our-img4.png"
+                                            alt="Projects4"
+                                        />
+                                        <img
+                                            class="absolute bottom-5 left-5"
+                                            src="../assets/icon/services/open-our.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </figure>
+                            </div>
+                        </article>
+
+                        <!-- Card 5 -->
+                        <!-- Right Card -->
+
+                        <article
+                            class="pb-6 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
+                        >
+                            <div
+                                class="px-6 pt-6 lg:px-15 lg:py-[82px] leading-[150%]"
+                            >
+                                <!--  Card Title -->
+                                <div
+                                    class="flex gap-[14px] font-medium items-center lg:justify-between text-[#F9EFEC]"
+                                >
+                                    <!-- Card Icon -->
+                                    <div
+                                        class="flex gap-[14px] text-xl lg:text-[22px] 2xl:text-3xl items-center"
+                                    >
+                                        <img
+                                            class="lg:size-[56px] 2xl:size-[66px]"
+                                            src="../assets/icon/services/web-dev.svg"
+                                            alt=" Web Development"
+                                        />
+
+                                        <h3 class="uppercase">
+                                            Web Development
+                                        </h3>
+                                    </div>
+
+                                    <!-- Card Link -->
+                                    <a
+                                        href="#!"
+                                        class="gap-2 items-center hidden lg:flex"
+                                    >
+                                        <img
+                                            class="arrow-link lg:size-10 2xl:size-[52px]"
+                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            alt="Arrow Link"
+                                        />
+
+                                        <span
+                                            class="font-mono text-base 2xl:text-xl uppercase"
+                                            >Book A Call
+                                        </span>
+                                    </a>
+                                </div>
+                                <!--  Card Body-->
+                                <span
+                                    class="lg:hidden flex mt-[20px] mb-[6px] text-[#F9EFEC] uppercase"
+                                    >Starts From $1,500</span
+                                >
+                                <!-- Card Desc -->
+                                <p
+                                    class="lg:mb-4 lg:mt-10 2xl:mt-[50px] 2xl:mb-5 text-[#B3B3B2] lg:text-base 2xl:text-lg"
+                                >
+                                    Our Web Development service is focused on
+                                    turning your website into a powerful digital
+                                    asset. We utilize the latest technologies
+                                    and industry best practices to build
+                                    websites.
+                                </p>
+
+                                <!-- Card Btn Mobile -->
+
+                                <a
+                                    href="#!"
+                                    class="btn-primary font-mono lg:hidden flex items-center justify-center mt-[20px] py-[14px] bg-[#CE7D63] rounded-lg uppercase"
+                                >
+                                    View all Projects
+                                </a>
+
+                                <span
+                                    class="hidden lg:flex justify-end text-[22px] 2xl:text-3xl font-medium text-[#F9EFEC] uppercase"
+                                    >Starts From $1,800</span
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Card 6 -->
+                        <!-- Left Card -->
+
+                        <article
+                            class="hidden lg:grid pb-6 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
+                        >
+                            <div class="flex hidden p-[30px] 2xl:p-10 lg:block">
+                                <!-- Left Card Title  -->
+                                <div
+                                    class="flex items-center justify-between font-medium uppercase"
+                                >
+                                    <h3
+                                        class="text-[#F9EFEC] text-xl 2xl:text-2xl uppercase"
+                                    >
+                                        Web Development Projects
+                                    </h3>
+
+                                    <a
+                                        href="#!"
+                                        class="flex items-center gap-2"
+                                    >
+                                        <img
+                                            class="arrow-link 2xl:size-[68px]"
+                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            alt="Arrow Link"
+                                        />
+
+                                        <span
+                                            class="text-[#B3B3B2] text-base 2xl:text-xl leading-[150%]"
+                                            >View All</span
+                                        >
+                                    </a>
+                                </div>
+
+                                <!-- Left Card Media -->
+                                <figure class="flex gap-[10px] mt-5 2xl:mt-6">
+                                    <a
+                                        href="#!"
+                                        class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
+                                    >
+                                        <img
+                                            class="block size-full border border-[#333333] rounded-[10px] object-cover"
+                                            src="../assets/img/services/our-img5.png"
+                                            alt="Projects5"
+                                        />
+
+                                        <img
+                                            class="absolute bottom-5 left-5"
+                                            src="../assets/icon/services/open-our.svg"
+                                            alt=""
+                                        />
+                                    </a>
+
+                                    <a
+                                        href="#!"
+                                        class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
+                                    >
+                                        <img
+                                            class="block size-full border border-[#333333] rounded-[10px] object-cover"
+                                            src="../assets/img/services/our-img6.png"
+                                            alt="Projects6"
+                                        />
+                                        <img
+                                            class="absolute bottom-5 left-5"
+                                            src="../assets/icon/services/open-our.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </figure>
+                            </div>
+                        </article>
+
+                        <!-- Card 7 -->
+                        <!-- Right Card -->
+
+                        <article
+                            class="pb-6 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
+                        >
+                            <div
+                                class="px-6 pt-6 lg:px-15 lg:py-20.5 leading-[150%]"
+                            >
+                                <!--  Card Title -->
+                                <div
+                                    class="flex gap-[14px] font-medium items-center lg:justify-between text-[#F9EFEC]"
+                                >
+                                    <!-- Card Icon -->
+                                    <div
+                                        class="flex gap-[14px] text-xl lg:text-[22px] 2xl:text-3xl items-center"
+                                    >
+                                        <img
+                                            class="lg:size-[56px] 2xl:size-[66px]"
+                                            src="../assets/icon/services/digital-mkt.svg"
+                                            alt="Digital Marketing"
+                                        />
+
+                                        <h3 class="uppercase">
+                                            Digital Marketing
+                                        </h3>
+                                    </div>
+
+                                    <!-- Card Link -->
+                                    <a
+                                        href="#!"
+                                        class="gap-2 items-center hidden lg:flex"
+                                    >
+                                        <img
+                                            class="arrow-link lg:size-10 2xl:size-[52px]"
+                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            alt="Arrow Link"
+                                        />
+
+                                        <span
+                                            class="font-mono text-base 2xl:text-xl uppercase"
+                                            >Book A Call
+                                        </span>
+                                    </a>
+                                </div>
+                                <!--  Card Body-->
+                                <span
+                                    class="lg:hidden flex mt-[20px] mb-[6px] text-[#F9EFEC] uppercase"
+                                    >Starts From $1,500</span
+                                >
+                                <!-- Card Desc -->
+                                <p
+                                    class="lg:mb-4 lg:mt-10 2xl:mt-[50px] 2xl:mb-5 text-[#B3B3B2] lg:text-base 2xl:text-lg"
+                                >
+                                    In the digital age, marketing is a critical
+                                    aspect of your business's success. Our
+                                    Digital Marketing service employs
+                                    data-driven strategies to enhance your
+                                    brand's visibility
+                                </p>
+
+                                <!-- Card Btn Mobile -->
+
+                                <a
+                                    href="#!"
+                                    class="btn-primary font-mono lg:hidden flex items-center justify-center mt-[20px] py-[14px] bg-[#CE7D63] rounded-lg uppercase"
+                                >
+                                    View all Projects
+                                </a>
+
+                                <span
+                                    class="hidden lg:flex justify-end text-[22px] 2xl:text-3xl font-medium text-[#F9EFEC] uppercase"
+                                    >Starts From $1,200</span
+                                >
+                            </div>
+                        </article>
+
+                        <!-- Card 8 -->
+                        <!-- Left Card -->
+
+                        <article
+                            class="hidden lg:grid pb-6 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
+                        >
+                            <div class="flex hidden p-[30px] 2xl:p-10 lg:block">
+                                <!-- Left Card Title  -->
+                                <div
+                                    class="flex items-center justify-between font-medium uppercase"
+                                >
+                                    <h3
+                                        class="text-[#F9EFEC] text-xl 2xl:text-2xl uppercase"
+                                    >
+                                        Digital Marketing Projects
+                                    </h3>
+
+                                    <a
+                                        href="#!"
+                                        class="flex items-center gap-2"
+                                    >
+                                        <img
+                                            class="arrow-link 2xl:size-[68px]"
+                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            alt="Arrow Link"
+                                        />
+
+                                        <span
+                                            class="text-[#B3B3B2] text-base 2xl:text-xl leading-[150%]"
+                                            >View All</span
+                                        >
+                                    </a>
+                                </div>
+
+                                <!-- Left Card Media -->
+                                <figure class="flex gap-[10px] mt-5 2xl:mt-6">
+                                    <a
+                                        href="#!"
+                                        class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
+                                    >
+                                        <img
+                                            class="block size-full border border-[#333333] rounded-[10px] object-cover"
+                                            src="../assets/img/services/our-img7.png"
+                                            alt="Projects7"
+                                        />
+
+                                        <img
+                                            class="absolute bottom-5 left-5"
+                                            src="../assets/icon/services/open-our.svg"
+                                            alt=""
+                                        />
+                                    </a>
+
+                                    <a
+                                        href="#!"
+                                        class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
+                                    >
+                                        <img
+                                            class="block size-full border border-[#333333] rounded-[10px] object-cover"
+                                            src="../assets/img/services/our-img6.png"
+                                            alt="Projects8"
+                                        />
+                                        <img
+                                            class="absolute bottom-5 left-5"
+                                            src="../assets/icon/services/open-our.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </figure>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!--Success Stories  -->
+                <section class="grid gap-2.5 mt-[50px] lg:mt-20 2xl:mt-30">
+                    <!-- Title -->
+                    <div
+                        class="flex items-center justify-between p-6 lg:px-10 lg:py-[46px] 2xl:px-12.5 2xl:py-14 bg-[#1A1A1A] rounded-[14px] lg:rounded-2xl leading-[150%] uppercase group-arrow"
+                    >
+                        <h2
+                            class="text-[#F9EFEC] text-[28px] lg:text-[38px] 2xl:text-5xl font-semibold"
+                        >
+                            Success Stories
+                        </h2>
+
+                        <!-- Title Link -->
+                        <div
+                            class="hidden lg:flex items-center gap-2 2xl:gap-2.5 font-mono font-medium"
+                        >
+                            <img
+                                class="arrow-link"
+                                src="../assets/icon/services/arrowtop-right.svg"
+                                alt=""
+                            />
+                            <span class="2xl:text-xl text-base text-[#B3B3B2]"
+                                >View All</span
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="pt-2.5 grid gap-2.5">
+                        <!-- Row1 -->
+
+                        <div
+                            class="grid p-2.5 lg:p-7.5 2xl:p-12.5 border-2 border-[#1F1F1F] rounded-2xl lg:rounded-[20px] 2xl:rounded-3xl"
+                        >
+                            <div class="grid lg:grid-cols-2 gap-2.5 2xl:gap-5">
+                                <!-- Column 1 -->
+                                <article
+                                    class="grid gap-5 2xl:gap-12.5 p-5 lg:px-10 lg:py-11 2xl:px-15 2xl:py-21 rounded-[10px] bg-[#1A1A1A] rounded-[10px] lg:rounded-[12px] 2xl:rounded-[14px] group-arrow"
+                                >
+                                    <div class="lg:flex justify-between">
+                                        <div
+                                            class="flex items-center font-medium uppercase leading-[150%]"
+                                        >
+                                            <img
+                                                class="lg:size-[56px] 2xl:size-[66px]"
+                                                src="../assets/icon/services/klothink.svg"
+                                                alt=" Klothink"
+                                            />
+                                            <h3
+                                                class="ml-2 lg:ml-2.5 2xl:ml-3.5 text-xl lg:text-2xl 2xl:text-3xl text-[#F9EFEC] font-medium"
+                                            >
+                                                Klothink
+                                            </h3>
+                                        </div>
+                                        <a
+                                            href="#!"
+                                            class="flex items-center mt-5 lg:m-0 uppercase text-[#B3B3B2]"
+                                        >
+                                            <img
+                                                class="size-10 2xl:size-13 arrow-link"
+                                                src="../assets/icon/services/arrowtop-right.svg"
+                                                alt=""
+                                            />
+                                            <span
+                                                class="ml-2 font-mono text-sm lg:text-base 2xl:text-xl font-medium"
+                                                >Visit Website</span
+                                            >
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="text-sm 2xl:flex items-center lg:text-base 2xl:text-lg"
+                                    >
+                                        <div
+                                            class="flex items-center 2xl:h-[47px] px-3.5 py-2 w-fit bg-[#1F1F1F] rounded-[45px]"
+                                        >
+                                            <span class="text-[#B3B3B2]"
+                                                >Industry</span
+                                            >
+                                            <span
+                                                class="size-1 block mx-[6px] rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                            <span
+                                                class="font-medium text-[#E6E6E6]"
+                                                >E-commerce</span
+                                            >
+                                        </div>
+                                        <div
+                                            class="flex mt-2 lg:mt-2.5 2xl:ml-3 2xl:h-[47px] 2xl:mt-0 items-center px-3.5 py-2 w-fit bg-[#1F1F1F] rounded-[45px]"
+                                        >
+                                            <span class="text-[#B3B3B2]"
+                                                >Service Utilized</span
+                                            >
+                                            <span
+                                                class="size-1 block mx-[6px] rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                            <span
+                                                class="font-medium text-[#E6E6E6]"
+                                                >Design & Development</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Column 2 -->
+
+                                <!-- Check List -->
+                                <div
+                                    class="flex flex-col gap-2.5 2xl:gap-5 group"
+                                >
+                                    <input
+                                        type="radio"
+                                        name="stories1"
+                                        id="challenge1"
+                                        class="peer/challenge1 hidden"
+                                    />
+                                    <input
+                                        type="radio"
+                                        name="stories1"
+                                        id="solution1"
+                                        class="peer/solution1 hidden"
+                                        checked
+                                    />
+                                    <input
+                                        type="radio"
+                                        name="stories1"
+                                        id="results1"
+                                        class="peer/results1 hidden"
+                                    />
+
+                                    <!-- Button List -->
+
+                                    <div
+                                        class="flex gap-2.5 2xl:gap-3 text-sm 2xl:text-lg uppercase"
+                                    >
+                                        <label
+                                            class="px-5 py-3.5 2xl:py-4.5 2xl:px-6 text-[#B3B3B2] font-medium leading-[150%] bg-[#1F1F1F] hover:bg-[#CE7D63] hover:text-[#0F0F0F] rounded-lg transition-colors duration-300 ease group-has-[#challenge1:checked]:bg-[#CE7D63] group-has-[#challenge1:checked]:text-[#0F0F0F]"
+                                            for="challenge1"
+                                            >Challenge</label
+                                        >
+                                        <label
+                                            class="px-5 py-3.5 2xl:py-4.5 2xl:px-6 text-[#B3B3B2] font-medium leading-[150%] bg-[#1F1F1F] hover:bg-[#CE7D63] hover:text-[#0F0F0F] rounded-lg transition-colors duration-300 ease group-has-[#solution1:checked]:bg-[#CE7D63] group-has-[#solution1:checked]:text-[#0F0F0F]"
+                                            for="solution1"
+                                            >Solution</label
+                                        >
+                                        <label
+                                            class="px-5 py-3.5 2xl:py-4.5 2xl:px-6 text-[#B3B3B2] font-medium leading-[150%] bg-[#1F1F1F] hover:bg-[#CE7D63] hover:text-[#0F0F0F] rounded-lg transition-colors duration-300 ease group-has-[#results1:checked]:bg-[#CE7D63] group-has-[#results1:checked]:text-[#0F0F0F]"
+                                            for="results1"
+                                            >Results</label
+                                        >
+                                    </div>
+
+                                    <!-- Content -->
+                                    <!-- 1 -->
+                                    <div
+                                        class="hidden group-has-[#challenge1:checked]:block p-6 lg:p-12.5 2xl:p-10 rounded-xl bg-[#1A1A1A]"
+                                    >
+                                        <h3
+                                            class="font-mono text-[#F9EFEC] text-2xl lg:text-[32px] 2xl:text-5xl uppercase"
+                                        >
+                                            Challenge
+                                        </h3>
+                                        <p
+                                            class="text-sm mt-2 lg:text-base 2xl:text-lg text-[#B3B3B2]"
+                                        >
+                                            Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Laborum, eum. Ad enim dignissimos
+                                            totam perferendis natus minima
+                                            dicta, odio fugiat corporis
+                                            blanditiis ipsum. Quis, minus minima
+                                            laboriosam sequi fugit nemo. Lorem
+                                            ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Fugit, libero.
+                                        </p>
+                                    </div>
+
+                                    <!-- 2 -->
+                                    <div
+                                        class="hidden group-has-[#solution1:checked]:block p-6 lg:p-12.5 2xl:p-10 rounded-xl bg-[#1A1A1A]"
+                                    >
+                                        <h3
+                                            class="font-mono text-[#F9EFEC] text-2xl lg:text-[32px] 2xl:text-5xl uppercase"
+                                        >
+                                            Solution
+                                        </h3>
+                                        <p
+                                            class="text-sm mt-2 lg:mt-2.5 2xl:mt-3.5 lg:text-base 2xl:text-lg text-[#B3B3B2]"
+                                        >
+                                            Our team conducted a thorough
+                                            analysis of their target audience
+                                            and business objectives. We designed
+                                            a modern and intuitive website with
+                                            seamless navigation and a
+                                            mobile-responsive layout.
+                                            Additionally, we integrated an
+                                            efficient checkout process and
+                                            optimized the site for search
+                                            engines.
+                                        </p>
+                                    </div>
+
+                                    <!-- 3 -->
+                                    <div
+                                        class="hidden group-has-[#results1:checked]:block p-6 lg:p-12.5 2xl:p-10 rounded-xl bg-[#1A1A1A]"
+                                    >
+                                        <h3
+                                            class="font-mono text-[#F9EFEC] text-2xl lg:text-[32px] 2xl:text-5xl uppercase"
+                                        >
+                                            Results
+                                        </h3>
+                                        <p
+                                            class="text-sm mt-2 lg:text-base 2xl:text-lg text-[#B3B3B2]"
+                                        >
+                                            Leveraging our expertise in app
+                                            development, we built an interactive
+                                            mobile app with user-friendly
+                                            features. The app allowed users to
+                                            set personalized fitness goals,
+                                            track their progress, and share
+                                            achievements on social media
+                                            platforms. Real-time data
+                                            synchronization enabled users to
+                                            access their data on multiple
+                                            devices.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row2 -->
+                        <div
+                            class="grid p-2.5 lg:p-7.5 2xl:p-12.5 border-2 border-[#1F1F1F] rounded-2xl lg:rounded-[20px] 2xl:rounded-3xl"
+                        >
+                            <div class="grid lg:grid-cols-2 gap-2.5 2xl:gap-5">
+                                <!-- Column 1 -->
+                                <article
+                                    class="grid gap-5 2xl:gap-12.5 p-5 lg:px-10 lg:py-11 2xl:px-15 2xl:py-21 rounded-[10px] bg-[#1A1A1A] rounded-[10px] lg:rounded-[12px] 2xl:rounded-[14px] group-arrow"
+                                >
+                                    <div class="lg:flex justify-between">
+                                        <div
+                                            class="flex items-center font-medium uppercase leading-[150%]"
+                                        >
+                                            <img
+                                                class="lg:size-[56px] 2xl:size-[66px]"
+                                                src="../assets/icon/services/finess-app.svg"
+                                                alt="Fitness Tracker"
+                                            />
+                                            <h3
+                                                class="ml-2 lg:ml-2.5 2xl:ml-3.5 text-xl lg:text-2xl 2xl:text-3xl text-[#F9EFEC] font-medium"
+                                            >
+                                                Fitness Tracker App
+                                            </h3>
+                                        </div>
+                                        <a
+                                            href="#!"
+                                            class="flex items-center mt-5 lg:m-0 uppercase text-[#B3B3B2]"
+                                        >
+                                            <img
+                                                class="size-10 2xl:size-13 arrow-link"
+                                                src="../assets/icon/services/arrowtop-right.svg"
+                                                alt=""
+                                            />
+                                            <span
+                                                class="ml-2 font-mono text-sm lg:text-base 2xl:text-xl lg:text-base 2xl:text-xl font-medium"
+                                                >Visit Website</span
+                                            >
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="text-sm 2xl:flex lg:text-base lg:text-lg"
+                                    >
+                                        <div
+                                            class="flex items-center 2xl:h-[47px] px-3.5 py-2 w-fit bg-[#1F1F1F] rounded-[45px]"
+                                        >
+                                            <span class="text-[#B3B3B2]"
+                                                >Industry</span
+                                            >
+                                            <span
+                                                class="size-1 block mx-[6px] rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                            <span
+                                                class="font-medium text-[#E6E6E6]"
+                                                >Health & Fitness</span
+                                            >
+                                        </div>
+                                        <div
+                                            class="flex mt-2 2xl:mt-0 2xl:ml-3 2xl:h-[47px] items-center px-3.5 py-2 w-fit bg-[#1F1F1F] rounded-[45px]"
+                                        >
+                                            <span class="text-[#B3B3B2]"
+                                                >Service Utilized</span
+                                            >
+                                            <span
+                                                class="size-1 block mx-[6px] rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                            <span
+                                                class="font-medium text-[#E6E6E6]"
+                                                >Mobile App Development</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Column 2 -->
+
+                                <!-- Check List -->
+                                <div
+                                    class="flex flex-col gap-2.5 2xl:gap-5 group"
+                                >
+                                    <input
+                                        type="radio"
+                                        name="stories2"
+                                        id="challenge2"
+                                        class="peer/challenge2 hidden"
+                                    />
+                                    <input
+                                        type="radio"
+                                        name="stories2"
+                                        id="solution2"
+                                        class="peer/solution2 hidden"
+                                        checked
+                                    />
+                                    <input
+                                        type="radio"
+                                        name="stories2"
+                                        id="results2"
+                                        class="peer/results2 hidden"
+                                    />
+
+                                    <!-- Button List -->
+
+                                    <div
+                                        class="flex gap-2.5 2xl:gap-3 text-sm 2xl:text-lg uppercase"
+                                    >
+                                        <label
+                                            class="px-5 py-3.5 2xl:py-4.5 2xl:px-6 text-[#B3B3B2] font-medium leading-[150%] bg-[#1F1F1F] hover:bg-[#CE7D63] hover:text-[#0F0F0F] rounded-lg transition-colors duration-300 ease group-has-[#challenge2:checked]:bg-[#CE7D63] group-has-[#challenge2:checked]:text-[#0F0F0F]"
+                                            for="challenge2"
+                                            >Challenge</label
+                                        >
+                                        <label
+                                            class="px-5 py-3.5 2xl:py-4.5 2xl:px-6 text-[#B3B3B2] font-medium leading-[150%] bg-[#1F1F1F] hover:bg-[#CE7D63] hover:text-[#0F0F0F] rounded-lg transition-colors duration-300 ease group-has-[#solution2:checked]:bg-[#CE7D63] group-has-[#solution2:checked]:text-[#0F0F0F]"
+                                            for="solution2"
+                                            >Solution</label
+                                        >
+                                        <label
+                                            class="px-5 py-3.5 2xl:py-4.5 2xl:px-6 text-[#B3B3B2] font-medium leading-[150%] bg-[#1F1F1F] hover:bg-[#CE7D63] hover:text-[#0F0F0F] rounded-lg transition-colors duration-300 ease group-has-[#results2:checked]:bg-[#CE7D63] group-has-[#results2:checked]:text-[#0F0F0F]"
+                                            for="results2"
+                                            >Results</label
+                                        >
+                                    </div>
+
+                                    <!-- Content -->
+                                    <!-- 1 -->
+                                    <div
+                                        class="hidden group-has-[#challenge2:checked]:block p-6 lg:p-12.5 2xl:p-10 rounded-xl bg-[#1A1A1A]"
+                                    >
+                                        <h3
+                                            class="font-mono text-[#F9EFEC] text-2xl lg:text-[32px] 2xl:text-5xl uppercase"
+                                        >
+                                            Challenge
+                                        </h3>
+                                        <p
+                                            class="text-sm mt-2 lg:text-base 2xl:text-lg text-[#B3B3B2]"
+                                        >
+                                            Our team conducted a thorough
+                                            analysis of their target audience
+                                            and business objectives. We designed
+                                            a modern and intuitive website with
+                                            seamless navigation and a
+                                            mobile-responsive layout.
+                                            Additionally, we integrated an
+                                            efficient checkout process and
+                                            optimized the site for search
+                                            engines.
+                                        </p>
+                                    </div>
+
+                                    <!-- 2 -->
+                                    <div
+                                        class="hidden group-has-[#solution2:checked]:block p-6 lg:p-12.5 2xl:p-10 rounded-xl bg-[#1A1A1A]"
+                                    >
+                                        <h3
+                                            class="font-mono text-[#F9EFEC] text-2xl lg:text-[32px] 2xl:text-5xl uppercase"
+                                        >
+                                            Solution
+                                        </h3>
+                                        <p
+                                            class="text-sm mt-2 lg:mt-2.5 2xl:mt-3.5 lg:text-base 2xl:text-lg text-[#B3B3B2]"
+                                        >
+                                            Leveraging our expertise in app
+                                            development, we built an interactive
+                                            mobile app with user-friendly
+                                            features. The app allowed users to
+                                            set personalized fitness goals,
+                                            track their progress, and share
+                                            achievements on social media
+                                            platforms. Real-time data
+                                            synchronization enabled users to
+                                            access their data on multiple
+                                            devices.
+                                        </p>
+                                    </div>
+
+                                    <!-- 3 -->
+                                    <div
+                                        class="hidden group-has-[#results2:checked]:block p-6 lg:p-12.5 2xl:p-10 rounded-xl bg-[#1A1A1A]"
+                                    >
+                                        <h3
+                                            class="font-mono text-[#F9EFEC] text-2xl lg:text-[32px] 2xl:text-5xl uppercase"
+                                        >
+                                            Results
+                                        </h3>
+                                        <p
+                                            class="text-sm mt-2 lg:text-base 2xl:text-lg text-[#B3B3B2]"
+                                        >
+                                            Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit. Sint
+                                            voluptatibus assumenda at ex, magnam
+                                            praesentium quos modi facere! Porro
+                                            quod vero excepturi nam molestiae
+                                            suscipit iure fugit asperiores!
+                                            Aperiam quod consectetur obcaecati
+                                            odit ut architecto! Lorem ipsum
+                                            dolor sit amet consectetur
+                                            adipisicing elit. Neque, vero!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Wiew All Link Success Stories -->
+                <a
+                    href="#!"
+                    class="flex lg:hidden items-center gap-1.5 p-5 justify-center bg-[#1A1A1A] rounded-xl mt-2.5"
+                >
+                    <div
+                        class="flex items-center justify-center bg-[#0F0F0F] border border-[#262626] size-12 rounded-full"
+                    >
+                        <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M3.75 11.25L10 17.5L16.25 11.25M10 17.5L10 2.5"
+                                stroke="#E7BEB1"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </div>
+                    <span
+                        class="text-[#B3B3B2] font-medium font-sm font-mono uppercase"
+                        >View All</span
+                    >
+                </a>
+
+                <!-- Testimonials -->
+
+                <section
+                    class="2xl:mt-35 lg:mt-20 mt-12.5 p-2.5 2xl:p-5 border-2 border-[#1F1F1F] rounded-[14px]"
+                >
+                    <!-- Title -->
+                    <div
+                        class="flex items-center justify-between p-6 lg:px-10 lg:py-[46px] 2xl:px-12.5 2xl:py-14 bg-[#1A1A1A] rounded-[14px] lg:rounded-2xl leading-[150%] uppercase group-arrow"
+                    >
+                        <h2
+                            class="text-[#F9EFEC] text-[28px] lg:text-[38px] 2xl:text-5xl font-semibold"
+                        >
+                            Testimonials
+                        </h2>
+                        <!-- Title Link -->
+                        <div
+                            class="hidden lg:flex items-center gap-2 2xl:gap-2.5 font-mono font-medium"
+                        >
+                            <img
+                                class="arrow-link 2xl:size-17"
+                                src="../assets/icon/services/arrowtop-right.svg"
+                                alt=""
+                            />
+                            <span class="2xl:text-xl text-base text-[#B3B3B2]"
+                                >View All</span
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="grid lg:grid-cols-4 gap-2.5 2xl:gap-5 mt-2.5 2xl:mt-5"
+                    >
+                        <!-- Card 1 -->
+
+                        <article
+                            class="lg:flex justify-between flex-col pt-6 lg:pt-7.5 2xl:pt-10 bg-[#1A1A1A] rounded-[10px] transition-all duration-300 hover:-translate-y-2 leading-[150%]"
+                        >
+                            <div>
+                                <h3
+                                    class="mx-6 mb-4 lg:mx-7.5 lg:mb-5 2xl:mx-10 2xl:mb-6 text-lg lg:text-[22px] 2xl:text-2xl text-[#F9EFEC] font-medium uppercase"
+                                >
+                                    NexGen turned our business around!
+                                </h3>
+                                <p
+                                    class="mx-6 mb-6 lg:mx-7.5 2xl:mx-10 2xl:mb-10 text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]"
+                                >
+                                    Their digital marketing strategies helped us
+                                    reach new customers and increase our revenue
+                                    by 30% within just a few months. Highly
+                                    recommended!
+                                </p>
+                            </div>
+                            <div
+                                class="flex items-center px-5 py-4 lg:px-7.5 lg:py-5 2xl:px-10 2xl:py-8 bg-[#1F1F1F] rounded-b-2xl"
+                            >
+                                <img
+                                    class="size-10 lg:size-12.5 2xl:size-15"
+                                    src="../assets/img/services/avatar.png"
+                                    alt="Sarah Thompson"
+                                />
+                                <div class="ml-2 lg:ml-2.5 2xl:ml-4">
+                                    <span
+                                        class="text-base lg:text-lg 2xl:text-xl text-[#F3DFD8] font-medium"
+                                        >Sarah Thompson</span
+                                    >
+                                    <span
+                                        class="block text-sm lg:text-base 2xl:text-lg text-[#81807E]"
+                                        >CEO of BlueBloom</span
+                                    >
+                                </div>
+                                <a
+                                    href="#!"
+                                    class="flex items-center justify-center shrink-0 ml-auto size-10 2xl:size-13 border border-[#333333] rounded-full"
+                                >
+                                    <svg
+                                        class="-rotate-90"
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M3.75 11.25L10 17.5L16.25 11.25M10 17.5L10 2.5"
+                                            stroke="#E7BEB1"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Card 2 -->
+                        <article
+                            class="lg:flex justify-between flex-col pt-6 lg:pt-7.5 2xl:pt-10 bg-[#1A1A1A] rounded-[10px] transition-all duration-300 hover:-translate-y-2 leading-[150%]"
+                        >
+                            <div>
+                                <h3
+                                    class="mx-6 mb-4 lg:mx-7.5 lg:mb-5 2xl:mx-10 2xl:mb-6 text-lg lg:text-[22px] 2xl:text-2xl text-[#F9EFEC] font-medium uppercase"
+                                >
+                                    NexGen turned our business around!
+                                </h3>
+                                <p
+                                    class="mx-6 mb-6 lg:mx-7.5 2xl:mx-10 2xl:mb-10 text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]"
+                                >
+                                    Their digital marketing strategies helped us
+                                    reach new customers and increase our revenue
+                                    by 30% within just a few months. Highly
+                                    recommended!
+                                </p>
+                            </div>
+                            <div
+                                class="flex items-center px-5 py-4 lg:px-7.5 lg:py-5 2xl:px-10 2xl:py-8 bg-[#1F1F1F] rounded-b-2xl"
+                            >
+                                <img
+                                    class="size-10 lg:size-12.5 2xl:size-15"
+                                    src="../assets/img/services/avatar2.png"
+                                    alt="Wade Warren"
+                                />
+                                <div class="ml-2 lg:ml-2.5 2xl:ml-4">
+                                    <span
+                                        class="text-base lg:text-lg 2xl:text-xl text-[#F3DFD8] font-medium"
+                                        >Wade Warren</span
+                                    >
+                                    <span
+                                        class="block text-sm lg:text-base 2xl:text-lg text-[#81807E]"
+                                        >Art Director</span
+                                    >
+                                </div>
+                                <a
+                                    href="#!"
+                                    class="flex items-center justify-center shrink-0 ml-auto size-10 2xl:size-13 border border-[#333333] rounded-full"
+                                >
+                                    <svg
+                                        class="-rotate-90"
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M3.75 11.25L10 17.5L16.25 11.25M10 17.5L10 2.5"
+                                            stroke="#E7BEB1"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Card 3 -->
+
+                        <article
+                            class="lg:flex justify-between flex-col pt-6 lg:pt-7.5 2xl:pt-10 bg-[#1A1A1A] rounded-[10px] transition-all duration-300 hover:-translate-y-2 leading-[150%]"
+                        >
+                            <div>
+                                <h3
+                                    class="mx-6 mb-4 lg:mx-7.5 lg:mb-5 2xl:mx-10 2xl:mb-6 text-lg lg:text-[22px] 2xl:text-2xl text-[#F9EFEC] font-medium uppercase"
+                                >
+                                    Working with NexGen was a pleasure.
+                                </h3>
+                                <p
+                                    class="mx-6 mb-6 lg:mx-7.5 2xl:mx-10 2xl:mb-10 text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]"
+                                >
+                                    Their web design team created a stunning
+                                    website that perfectly captured our brand's
+                                    essence. The feedback from our customers has
+                                    been overwhelmingly positive.
+                                </p>
+                            </div>
+                            <div
+                                class="flex items-center px-5 py-4 lg:px-7.5 lg:py-5 2xl:px-10 2xl:py-8 bg-[#1F1F1F] rounded-b-2xl"
+                            >
+                                <img
+                                    class="size-10 lg:size-12.5 2xl:size-15"
+                                    src="../assets/img/services/avatar3.png"
+                                    alt="Lisa Williams"
+                                />
+                                <div class="ml-2 lg:ml-2.5 2xl:ml-4">
+                                    <span
+                                        class="text-base lg:text-lg 2xl:text-xl text-[#F3DFD8] font-medium"
+                                        >Lisa Williams</span
+                                    >
+                                    <span
+                                        class="block text-sm lg:text-base 2xl:text-lg text-[#81807E]"
+                                        >CEO Of HealthTech</span
+                                    >
+                                </div>
+                                <a
+                                    href="#!"
+                                    class="flex items-center justify-center shrink-0 ml-auto size-10 2xl:size-13 border border-[#333333] rounded-full"
+                                >
+                                    <svg
+                                        class="-rotate-90"
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M3.75 11.25L10 17.5L16.25 11.25M10 17.5L10 2.5"
+                                            stroke="#E7BEB1"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Card 4 -->
+                        <article
+                            class="lg:flex justify-between flex-col pt-6 lg:pt-7.5 2xl:pt-10 bg-[#1A1A1A] rounded-[10px] transition-all duration-300 hover:-translate-y-2 leading-[150%] hidden"
+                        >
+                            <d>
+                                <h3
+                                    class="mx-6 mb-4 lg:mx-7.5 lg:mb-5 2xl:mx-10 2xl:mb-6 text-lg lg:text-[22px] 2xl:text-2xl text-[#F9EFEC] font-medium uppercase"
+                                >
+                                    NexGen's web design brought our vision
+                                </h3>
+
+                                <p
+                                    class="mx-6 mb-6 lg:mx-7.5 2xl:mx-10 2xl:mb-10 text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]"
+                                >
+                                    Their responsive design ensures our website
+                                    looks stunning on all devices, contributing
+                                    to increased user engagement.
+                                </p>
+                            </d>
+
+                            <div
+                                class="flex items-center px-5 py-4 lg:px-7.5 lg:py-5 2xl:px-10 2xl:py-8 bg-[#1F1F1F] rounded-b-2xl"
+                            >
+                                <img
+                                    class="size-10 lg:size-12.5 2xl:size-15"
+                                    src="../assets/img/services/avatar4.png"
+                                    alt="Jennifer Lee"
+                                />
+                                <div class="ml-2 lg:ml-2.5 2xl:ml-4">
+                                    <span
+                                        class="text-base lg:text-lg 2xl:text-xl text-[#F3DFD8] font-medium"
+                                        >Jennifer Lee</span
+                                    >
+                                    <span
+                                        class="block text-sm lg:text-base 2xl:text-lg text-[#81807E]"
+                                        >COO of Foodie Haven</span
+                                    >
+                                </div>
+                                <a
+                                    href="#!"
+                                    class="flex items-center justify-center shrink-0 ml-auto size-10 2xl:size-13 border border-[#333333] rounded-full"
+                                >
+                                    <svg
+                                        class="-rotate-90 group-hover:translate-x-2"
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M3.75 11.25L10 17.5L16.25 11.25M10 17.5L10 2.5"
+                                            stroke="#E7BEB1"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Wiew All Link Testimonials -->
+                    <a
+                        href="#!"
+                        class="flex lg:hidden items-center gap-1.5 p-5 justify-center bg-[#1A1A1A] rounded-xl mt-2.5"
+                    >
+                        <div
+                            class="flex items-center justify-center bg-[#0F0F0F] border border-[#262626] size-12 rounded-full"
+                        >
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M3.75 11.25L10 17.5L16.25 11.25M10 17.5L10 2.5"
+                                    stroke="#E7BEB1"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                        <span
+                            class="text-[#B3B3B2] font-medium font-sm font-mono uppercase"
+                        >
+                            ALL Testimonials</span
+                        >
+                    </a>
+                </section>
+
+                <!-- Frequently Asked Questions + Form -->
+
+                <section class="mt-12.5 lg:mt-20 2xl:mt-30">
+                    <!-- Title  -->
+
+                    <div
+                        class="flex items-center justify-between p-6 lg:px-10 lg:py-[46px] 2xl:px-12.5 2xl:py-14 bg-[#1A1A1A] rounded-[14px] lg:rounded-2xl leading-[150%] uppercase group-arrow"
+                    >
+                        <h2
+                            class="text-[#F9EFEC] text-[28px] lg:text-[38px] 2xl:text-5xl font-semibold"
+                        >
+                            Frequently Asked Questions
+                        </h2>
+
+                        <!-- Title Link -->
+
+                        <div
+                            class="hidden lg:flex items-center gap-2 2xl:gap-2.5 font-mono font-medium"
+                        >
+                            <img
+                                class="arrow-link 2xl:size-17"
+                                src="../assets/icon/services/arrowtop-right.svg"
+                                alt=""
+                            />
+
+                            <span class="2xl:text-xl text-base text-[#B3B3B2]"
+                                >View All</span
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Faq + Form  -->
+                    <div
+                        class="grid lg:grid-cols-[1.4fr_1fr] gap-2.5 2xl:gap-5 items-start"
+                    >
+                        <!-- Faq -->
+                        <section class="">
+                            <!-- Faq Item 1 -->
+
+                            <article
+                                class="mt-2.5 2xl:mt-5 p-7.5 lg:p-10 2xl:p-15 rounded-[14px] lg:rounded-2xl bg-[#1A1A1A] [&:has(input:checked)_.plus]:hidden [&:has(input:checked)_.minus]:flex"
+                            >
+                                <!-- Faq Question -->
+
+                                <!-- Faq Check -->
+                                <input
+                                    type="checkbox"
+                                    id="faq-1"
+                                    class="peer hidden"
+                                />
+
+                                <!--Questions  -->
+                                <div
+                                    class="flex items-center justify-between gap-5 2xl:gap-12.5"
+                                >
+                                    <h3
+                                        class="text-lg lg:text-xl 2xl:text-[22px] font-medium text-[#F9EFEC]"
+                                    >
+                                        How long does it take to complete a web
+                                        development project?
+                                    </h3>
+
+                                    <!-- FAQ Toggle + -->
+                                    <label
+                                        for="faq-1"
+                                        class="flex items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full plus cursor-pointer select-none"
+                                    >
+                                        <img
+                                            src="../assets/icon/services/plus.svg"
+                                            alt="plus"
+                                        />
+                                    </label>
+
+                                    <!-- FAQ Toggle - -->
+                                    <label
+                                        for="faq-1"
+                                        class="hidden items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full minus cursor-pointer select-none"
+                                    >
+                                        <img
+                                            class=""
+                                            src="../assets/icon/services/minus.svg"
+                                            alt="minus"
+                                        />
+                                    </label>
+                                </div>
+
+                                <!-- Faq Answer -->
+                                <div
+                                    class="max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-100 answer"
+                                >
+                                    <div class="pt-5 lg:pt-6 2xl:pt-7.5">
+                                        <p
+                                            class="pt-5 lg:pt-6 2xl:pt-7.5 text-sm lg:text-base 2xl:text-lg text-[#B3B3B2] border-t border-[#262626] leading-[150%]"
+                                        >
+                                            The timeline varies depending on the
+                                            project's complexity and
+                                            requirements. Our team strives to
+                                            deliver projects on time while
+                                            maintaining the highest quality
+                                            standards.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Faq Item 2 -->
+
+                            <article
+                                class="mt-2.5 2xl:mt-5 p-7.5 lg:p-10 2xl:p-15 rounded-[14px] lg:rounded-2xl bg-[#1A1A1A] [&:has(input:checked)_.plus]:hidden [&:has(input:checked)_.minus]:flex"
+                            >
+                                <!-- Faq Question -->
+
+                                <!-- Faq Check -->
+                                <input
+                                    type="checkbox"
+                                    id="faq-2"
+                                    class="peer hidden"
+                                />
+
+                                <!--Questions  -->
+                                <div
+                                    class="flex items-center justify-between gap-5 2xl:gap-12.5"
+                                >
+                                    <h3
+                                        class="text-lg lg:text-xl 2xl:text-[22px] font-medium text-[#F9EFEC]"
+                                    >
+                                        Can you handle large-scale mobile app
+                                        development projects?
+                                    </h3>
+
+                                    <!-- FAQ Toggle + -->
+                                    <label
+                                        for="faq-2"
+                                        class="flex items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full plus cursor-pointer select-none"
+                                    >
+                                        <img
+                                            src="../assets/icon/services/plus.svg"
+                                            alt="plus"
+                                        />
+                                    </label>
+
+                                    <!-- FAQ Toggle - -->
+                                    <label
+                                        for="faq-2"
+                                        class="hidden items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full minus cursor-pointer select-none"
+                                    >
+                                        <img
+                                            class=""
+                                            src="../assets/icon/services/minus.svg"
+                                            alt="minus"
+                                        />
+                                    </label>
+                                </div>
+
+                                <!-- Faq Answer -->
+                                <div
+                                    class="max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-100 answer"
+                                >
+                                    <div class="pt-5 lg:pt-6 2xl:pt-7.5">
+                                        <p
+                                            class="pt-5 lg:pt-6 2xl:pt-7.5 text-sm lg:text-base 2xl:text-lg text-[#B3B3B2] border-t border-[#262626] leading-[150%]"
+                                        >
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Aspernatur error odit quis rerum sed
+                                            deserunt consectetur, in minus
+                                            asperiores labore expedita iure
+                                            architecto officiis. Ad quae
+                                            recusandae sed blanditiis officiis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Faq Item 3 -->
+
+                            <article
+                                class="mt-2.5 2xl:mt-5 p-7.5 lg:p-10 2xl:p-15 rounded-[14px] lg:rounded-2xl bg-[#1A1A1A] [&:has(input:checked)_.plus]:hidden [&:has(input:checked)_.minus]:flex"
+                            >
+                                <!-- Faq Question -->
+                                <!-- Faq Check -->
+                                <input
+                                    type="checkbox"
+                                    id="faq-3"
+                                    class="peer hidden"
+                                />
+
+                                <!--Questions  -->
+                                <div
+                                    class="flex items-center justify-between gap-5 2xl:gap-12.5"
+                                >
+                                    <h3
+                                        class="text-lg lg:text-xl 2xl:text-[22px] font-medium text-[#F9EFEC]"
+                                    >
+                                        Can you integrate third-party APIs into
+                                        our mobile app?
+                                    </h3>
+
+                                    <!-- FAQ Toggle + -->
+
+                                    <label
+                                        for="faq-3"
+                                        class="flex items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full plus cursor-pointer select-none"
+                                    >
+                                        <img
+                                            src="../assets/icon/services/plus.svg"
+                                            alt="plus"
+                                        />
+                                    </label>
+
+                                    <label
+                                        for="faq-3"
+                                        class="hidden items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full minus cursor-pointer select-none"
+                                    >
+                                        <img
+                                            class=""
+                                            src="../assets/icon/services/minus.svg"
+                                            alt="minus"
+                                        />
+                                    </label>
+                                </div>
+
+                                <!-- Faq Answer -->
+                                <div
+                                    class="max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-100 answer"
+                                >
+                                    <div class="pt-5 lg:pt-6 2xl:pt-7.5">
+                                        <p
+                                            class="pt-5 lg:pt-6 2xl:pt-7.5 text-sm lg:text-base 2xl:text-lg text-[#B3B3B2] border-t border-[#262626] leading-[150%]"
+                                        >
+                                            Lorem ipsum dolor sit amet
+                                            consectetur, adipisicing elit.
+                                            Distinctio minima maiores illum
+                                            architecto error numquam odit fuga
+                                            ratione obcaecati amet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Faq Item 4 -->
+
+                            <article
+                                class="mt-2.5 2xl:mt-5 p-7.5 lg:p-10 2xl:p-15 rounded-[14px] lg:rounded-2xl bg-[#1A1A1A] [&:has(input:checked)_.plus]:hidden [&:has(input:checked)_.minus]:flex"
+                            >
+                                <!-- Faq Question -->
+                                <!-- Faq Check -->
+                                <input
+                                    type="checkbox"
+                                    id="faq-4"
+                                    class="peer hidden"
+                                />
+
+                                <!--Questions  -->
+                                <div
+                                    class="flex items-center justify-between gap-5 2xl:gap-12.5"
+                                >
+                                    <h3
+                                        class="text-lg lg:text-xl 2xl:text-[22px] font-medium text-[#F9EFEC]"
+                                    >
+                                        How do you ensure cross-platform
+                                        compatibility for mobile apps?
+                                    </h3>
+
+                                    <!-- FAQ Toggle + -->
+                                    <label
+                                        for="faq-4"
+                                        class="flex items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full plus cursor-pointer select-none"
+                                    >
+                                        <img
+                                            src="../assets/icon/services/plus.svg"
+                                            alt="plus"
+                                        />
+                                    </label>
+
+                                    <!-- FAQ Toggle - -->
+                                    <label
+                                        for="faq-4"
+                                        class="hidden items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full minus cursor-pointer select-none"
+                                    >
+                                        <img
+                                            class=""
+                                            src="../assets/icon/services/minus.svg"
+                                            alt="minus"
+                                        />
+                                    </label>
+                                </div>
+
+                                <!-- Faq Answer -->
+                                <div
+                                    class="max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-100 answer"
+                                >
+                                    <div class="pt-5 lg:pt-6 2xl:pt-7.5">
+                                        <p
+                                            class="pt-5 lg:pt-6 2xl:pt-7.5 text-sm lg:text-base 2xl:text-lg text-[#B3B3B2] border-t border-[#262626] leading-[150%]"
+                                        >
+                                            Lorem ipsum dolor sit amet
+                                            consectetur, adipisicing elit.
+                                            Delectus autem voluptates veniam?
+                                            Consequatur blanditiis repellat
+                                            possimus reiciendis exercitationem
+                                            assumenda nostrum asperiores
+                                            praesentium? Iste, numquam ducimus
+                                            corrupti et laudantium quod, quo
+                                            nisi recusandae cum facere aperiam
+                                            repellendus, cumque earum explicabo
+                                            optio!
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Faq Item 5 -->
+
+                            <article
+                                class="mt-2.5 2xl:mt-5 p-7.5 lg:p-10 2xl:p-15 rounded-[14px] lg:rounded-2xl bg-[#1A1A1A] [&:has(input:checked)_.plus]:hidden [&:has(input:checked)_.minus]:flex"
+                            >
+                                <!-- Faq Question -->
+
+                                <!-- Faq Check -->
+                                <input
+                                    type="checkbox"
+                                    id="faq-5"
+                                    class="peer hidden"
+                                />
+                                <!--Questions  -->
+                                <div
+                                    class="flex items-center justify-between gap-5 2xl:gap-12.5"
+                                >
+                                    <h3
+                                        class="text-lg lg:text-xl 2xl:text-[22px] font-medium text-[#F9EFEC]"
+                                    >
+                                        What is your approach to user experience
+                                        (UX) design?
+                                    </h3>
+
+                                    <!-- FAQ Toggle + -->
+                                    <label
+                                        for="faq-5"
+                                        class="flex items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full plus cursor-pointer select-none"
+                                    >
+                                        <img
+                                            src="../assets/icon/services/plus.svg"
+                                            alt="plus"
+                                        />
+                                    </label>
+                                    <!-- FAQ Toggle - -->
+                                    <label
+                                        for="faq-5"
+                                        class="hidden items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full minus cursor-pointer select-none"
+                                    >
+                                        <img
+                                            class=""
+                                            src="../assets/icon/services/minus.svg"
+                                            alt="minus"
+                                        />
+                                    </label>
+                                </div>
+
+                                <!-- Faq Answer -->
+                                <div
+                                    class="max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-100 answer"
+                                >
+                                    <div class="pt-5 lg:pt-6 2xl:pt-7.5">
+                                        <p
+                                            class="pt-5 lg:pt-6 2xl:pt-7.5 text-sm lg:text-base 2xl:text-lg text-[#B3B3B2] border-t border-[#262626] leading-[150%]"
+                                        >
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Laudantium ut perferendis, quisquam
+                                            consequuntur ullam excepturi earum
+                                            rem doloremque ex quaerat dolores
+                                            mollitia obcaecati, veritatis
+                                            asperiores unde sapiente?
+                                            Consequuntur, ex id?
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+
+                        <!-- Form -->
+                        <section
+                            class="p-7.5 lg:p-12.5 2xl:p-15 lg:mt-2.5 2xl:mt-5 bg-[#1A1A1A] rounded-xl 2xl:rounded-[14px]"
+                        >
+                            <!-- Title Form -->
+
+                            <h3
+                                class="text-lg lg:text-xl 2xl:text-2xl text-[#F9EFEC] pb-5 lg:pb-7.5 2xl:pb-12.5 border-b border-[#262626] font-medium leading-[150%] uppercase"
+                            >
+                                Ask your question
+                            </h3>
+
+                            <!-- Contact Form -->
+                            <form
+                                action=""
+                                class="flex flex-col mt-5 lg:mt-7.5 2xl:mt-12.5 gap-2.5 2xl:gap-5"
+                            >
+                                <!-- Name -->
+
+                                <div class="flex flex-col gap-2 2xl:gap-2.5">
+                                    <label
+                                        for="name"
+                                        class="text-base 2xl:text-lg text-[#F3DFD8] font-medium uppercase leading-6"
+                                        >Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Enter your name"
+                                        class="bg-[#0F0F0F] p-4 lg:p-5 2xl:p-6 text-[#F3DFD8] text-base 2xl:text-lg rounded-lg 2xl:rounded-[10px] placeholder:text-[#676665] leading-[150%] border border-transparent focus:outline-none focus:border-[#333333]"
+                                    />
+                                </div>
+
+                                <!-- Email -->
+                                <div class="flex flex-col gap-2 2xl:gap-2.5">
+                                    <label
+                                        for="email"
+                                        class="text-base 2xl:text-lg text-[#F3DFD8] font-medium uppercase leading-6"
+                                        >Email</label
+                                    >
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Enter your email"
+                                        class="bg-[#0F0F0F] p-4 lg:p-5 2xl:p-6 text-[#F3DFD8] text-base 2xl:text-lg rounded-lg 2xl:rounded-[10px] placeholder:text-[#676665] leading-[150%] border border-transparent focus:outline-none focus:border-[#333333]"
+                                    />
+                                </div>
+
+                                <!-- Textarea -->
+                                <div class="flex flex-col gap-2 2xl:gap-2.5">
+                                    <label
+                                        for="your-question"
+                                        class="text-base 2xl:text-lg text-[#F3DFD8] font-medium uppercase leading-6"
+                                        >Your Question</label
+                                    >
+                                    <textarea
+                                        name="your-question"
+                                        id="your-question"
+                                        placeholder="Enter Your Question Here ....."
+                                        class="bg-[#0F0F0F] p-4 lg:p-5 2xl:p-6 text-[#F3DFD8] text-base 2xl:text-lg rounded-lg 2xl:rounded-[10px] placeholder:text-[#676665] leading-[150%] border border-transparent focus:outline-none focus:border-[#333333]"
+                                    ></textarea>
+                                </div>
+
+                                <div
+                                    class="flex items-center justify-center mt-2.5 lg:mt-5 2xl:mt-10 hover;"
+                                >
+                                    <button
+                                        type="submit"
+                                        name="submit"
+                                        class="p-3.5 2xl:p-4.5 w-full text-sm 2xl:text-lg text-[#0F0F0F] bg-[#CE7D63] font-medium rounded-lg 2xl:rounded-xl leading-[150%] uppercase transition-all duration-300 hover:bg-[#D88A72] hover:-translate-y-0.5"
+                                    >
+                                        Send Your Message
+                                    </button>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- CTA Section -->
+
+                <section
+                    class="lg:flex lg:items-center justify-between p-7.5 lg:p-15 2xl:p-20 mt-12.5 lg:mt-20 2xl:mt-30 bg-[#CE7D63] rounded-[14px]"
+                >
+                    <!-- Content -->
+                    <div class="">
+                        <h2
+                            class="text-[28px] lg:text-[42px] 2xl:text-[58px] text-[#0F0F0F] leading-[150%] font-medium uppercase"
+                        >
+                            Ready to Transform Your Digital Presence?
+                        </h2>
+                        <p
+                            class="text-[#262626] text-sm lg:text-base 2xl:text-lg mt-0.5 2xl:mt-1 leading-[150%]"
+                        >
+                            Take the first step towards digital success with
+                            NexGen by your side. Our team of experts is eager to
+                            craft tailored solutions that drive growth for your
+                            business.
+                        </p>
+                    </div>
+
+                    <!-- Btn -->
+                    <a
+                        href="#!"
+                        class="flex items-center justify-center shrink-0 lg:self-end gap-2 2xl:gap-2.5 mt-4 py-3.5 2xl:py-4.5 lg:px-6 2xl:px-8.5 lg:mt-0 rounded-xl text-sm 2xl:text-lg text-[#F3DFD8] bg-[#0F0F0F] uppercase hover:bg-[#1A1A1A] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 group"
+                    >
+                        Get in touch
+                        <svg
+                            class="2xl:size-7 group-hover:-rotate-135 transition-all duration-300"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M7.5625 3.4375L17.875 3.4375C18.0573 3.4375 18.2322 3.50993 18.3611 3.63886C18.4901 3.7678 18.5625 3.94266 18.5625 4.125V14.4375C18.5625 14.8172 18.2547 15.125 17.875 15.125C17.4953 15.125 17.1875 14.8172 17.1875 14.4375V5.78477L4.61114 18.3611C4.34265 18.6296 3.90735 18.6296 3.63886 18.3611C3.37038 18.0926 3.37038 17.6574 3.63886 17.3889L16.2152 4.8125L7.5625 4.8125C7.1828 4.8125 6.875 4.5047 6.875 4.125C6.875 3.7453 7.1828 3.4375 7.5625 3.4375Z"
+                                fill="#E7BEB1"
+                            />
+                        </svg>
+                    </a>
+                </section>
+
+                <!-- Social Marquee -->
+
+                <div
+                    class="mt-2.5 2xl:mt-5 overflow-hidden bg-[#1A1A1A] rounded-xl"
+                >
+                    <div class="marqee">
+                        <div
+                            class="flex items-center py-[14px] text-sm 2xl:text-xl text-[#676665] font-mono uppercase"
+                        >
+                            <span class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                >Follow Us on Social Media</span
+                            >
+                            <span
+                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                            ></span>
+                            <span class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                >Follow Us on Social Media</span
+                            >
+                            <span
+                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                            ></span>
+                            <span class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                >Follow Us on Social Media</span
+                            >
+                            <span
+                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                            ></span>
+                            <span class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                >Follow Us on Social Media</span
+                            >
+                            <span
+                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                            ></span>
+                            <span class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                >Follow Us on Social Media</span
+                            >
+                            <span
+                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                            ></span>
+                            <span class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                >Follow Us on Social Media</span
+                            >
+                            <span
+                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                            ></span>
+                            <span class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                >Follow Us on Social Media</span
+                            >
+                            <span
+                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                            ></span>
+                            <span class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                >Follow Us on Social Media</span
+                            >
+                            <span
+                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                            ></span>
+                            <span class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                >Follow Us on Social Media</span
+                            >
+                            <span
+                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                            ></span>
+                            <span class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                >Follow Us on Social Media</span
+                            >
+                            <span
+                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                            ></span>
+                            <span class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                >Follow Us on Social Media</span
+                            >
+                            <span
+                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer
+                class="grid lg:grid-cols-[1fr_1.4fr] gap-2.5 2xl:gap-5 mt-2.5 2xl:mt-5 overflow-hidden"
+            >
+                <!-- Social List -->
+                <section
+                    class="min-w-0 grid grid-cols-4 lg:grid-cols-2 gap-2.5 2xl:gap-5"
+                >
+                    <!-- Social Item 1 -->
+                    <a
+                        href="#!"
+                        class="lg:py-7.5 2xl:py-10 lg:bg-[#1A1A1A] rounded-[10px] 2xl:rounded-[14px] transition-all duration-300 hover:bg-[#262626] hover:-translate-y-1 group"
+                    >
+                        <!-- Icon -->
+
+                        <div
+                            class="lg:flex lg:justify-between items-center lg:mx-7.5 2xl:mx-10"
+                        >
+                            <div
+                                class="flex justify-center px-6.5 py-3.5 lg:p-3.5 2xl:p-4 border border-[#333333] rounded-[10px] bg-[#1F1F1F]"
+                            >
+                                <img
+                                    class="size-7 2xl:size-8.5 block"
+                                    src="../assets/icon/services/instagram.svg"
+                                    alt="Instagram"
+                                />
+                            </div>
+
+                            <div
+                                class="hidden lg:block group-hover:-rotate-180 transition-all duration-600"
+                            >
+                                <img
+                                    class="size-10 2xl:size-13"
+                                    src="../assets/icon/services/arrowtop-right.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Body -->
+                        <div
+                            class="hidden lg:block leading-[150%] mx-6.5 2xl:mx-10"
+                        >
+                            <h3
+                                class="text-[22px] 2xl:text-3xl mt-15 2xl:mt-20 text-[#F9EFEC] font-medium uppercase"
+                            >
+                                INstagram
+                            </h3>
+                            <p
+                                class="mt-2.5 2xl:mt-3 text-base 2xl:text-lg text-[#B3B3B2]"
+                            >
+                                Share visually appealing snippets of our
+                                projects.
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Social Item 2 -->
+                    <a
+                        href="#!"
+                        class="lg:py-7.5 2xl:py-10 lg:bg-[#1A1A1A] rounded-[10px] 2xl:rounded-[14px] transition-all duration-300 hover:bg-[#262626] hover:-translate-y-1 group"
+                    >
+                        <!-- Icon -->
+
+                        <div
+                            class="lg:flex lg:justify-between items-center lg:mx-7.5 2xl:mx-10"
+                        >
+                            <div
+                                class="flex justify-center px-6.5 py-3.5 lg:p-3.5 2xl:p-4 border border-[#333333] rounded-[10px] bg-[#1F1F1F]"
+                            >
+                                <img
+                                    class="size-7 2xl:size-8.5 block"
+                                    src="../assets/icon/services/Twitter.svg"
+                                    alt="Twitter"
+                                />
+                            </div>
+
+                            <div
+                                class="hidden lg:block group-hover:-rotate-180 transition-all duration-600"
+                            >
+                                <img
+                                    class="size-10 2xl:size-13"
+                                    src="../assets/icon/services/arrowtop-right.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Body -->
+                        <div
+                            class="hidden lg:block leading-[150%] mx-6.5 2xl:mx-10"
+                        >
+                            <h3
+                                class="text-[22px] 2xl:text-3xl mt-15 2xl:mt-20 text-[#F9EFEC] font-medium uppercase"
+                            >
+                                Twitter
+                            </h3>
+                            <p
+                                class="mt-2.5 2xl:mt-3 text-base 2xl:text-lg text-[#B3B3B2]"
+                            >
+                                Tweet about interesting coding challenges you've
+                                overcome.
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Social Item 3 -->
+                    <a
+                        href="#!"
+                        class="lg:py-7.5 2xl:py-10 lg:bg-[#1A1A1A] rounded-[10px] 2xl:rounded-[14px] transition-all duration-300 hover:bg-[#262626] hover:-translate-y-1 group"
+                    >
+                        <!-- Icon -->
+
+                        <div
+                            class="lg:flex lg:justify-between items-center lg:mx-7.5 2xl:mx-10"
+                        >
+                            <div
+                                class="flex justify-center px-6.5 py-3.5 lg:p-3.5 2xl:p-4 border border-[#333333] rounded-[10px] bg-[#1F1F1F]"
+                            >
+                                <img
+                                    class="size-7 2xl:size-8.5 block"
+                                    src="../assets/icon/services/Dribbble.svg"
+                                    alt="Dribbble"
+                                />
+                            </div>
+
+                            <div
+                                class="hidden lg:block group-hover:-rotate-180 transition-all duration-600"
+                            >
+                                <img
+                                    class="size-10 2xl:size-13"
+                                    src="../assets/icon/services/arrowtop-right.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Body -->
+                        <div
+                            class="hidden lg:block leading-[150%] mx-6.5 2xl:mx-10"
+                        >
+                            <h3
+                                class="text-[22px] 2xl:text-3xl mt-15 2xl:mt-20 text-[#F9EFEC] font-medium uppercase"
+                            >
+                                Dribbble
+                            </h3>
+                            <p
+                                class="mt-2.5 2xl:mt-3 text-base 2xl:text-lg text-[#B3B3B2]"
+                            >
+                                Showcase design elements of our web projects.
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Social Item 4 -->
+                    <a
+                        href="#!"
+                        class="lg:py-7.5 2xl:py-10 lg:bg-[#1A1A1A] rounded-[10px] 2xl:rounded-[14px] transition-all duration-300 hover:bg-[#262626] hover:-translate-y-1 group"
+                    >
+                        <!-- Icon -->
+
+                        <div
+                            class="lg:flex lg:justify-between items-center lg:mx-7.5 2xl:mx-10"
+                        >
+                            <div
+                                class="flex justify-center px-6.5 py-3.5 lg:p-3.5 2xl:p-4 border border-[#333333] rounded-[10px] bg-[#1F1F1F]"
+                            >
+                                <img
+                                    class="size-7 2xl:size-8.5 block"
+                                    src="../assets/icon/services/Behance.svg"
+                                    alt="Behance"
+                                />
+                            </div>
+
+                            <div class="hidden lg:block">
+                                <img
+                                    class="size-10 2xl:size-13 group-hover:-rotate-180 transition-all duration-600"
+                                    src="../assets/icon/services/arrowtop-right.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Body -->
+                        <div
+                            class="hidden lg:block leading-[150%] mx-7.5 2xl:mx-10"
+                        >
+                            <h3
+                                class="text-[22px] 2xl:text-3xl mt-15 2xl:mt-20 text-[#F9EFEC] font-medium uppercase"
+                            >
+                                Behance
+                            </h3>
+                            <p
+                                class="mt-2.5 2xl:mt-3 text-base 2xl:text-lg text-[#B3B3B2]"
+                            >
+                                Create detailed presentations for our projects.
+                            </p>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- Content -->
+                <div
+                    class="min-w-0 grid gap-2.5 2xl:gap-5 grid-rows-[1.5fr_1fr]"
+                >
+                    <!-- Footer Nav -->
+                    <nav
+                        class="grid grid-cols-2 lg:grid-cols-4 p-6 lg:p-10 2xl:p-15 gap-7.5 lg:gap-10 2xl:gap-15 bg-[#1A1A1A] rounded-[14px]"
+                    >
+                        <!-- List Link 1 -->
+                        <div class="flex flex-col gap-4 lg:gap-5 2xl:gap-7.5">
+                            <h4
+                                class="text-[#F3DFD8] text-lg lg:text-[22px] font-mono font-bold"
+                            >
+                                Home
+                            </h4>
+                            <ul
+                                class="flex flex-col gap-2.5 lg:gap-3.5 2xl:gap-4.5 text-sm lg:text-base 2xl:text-lg text-[#81807E]"
+                            >
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >Why Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >About Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >Testimonials</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >FAQ’s</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- List Link 2 -->
+                        <div class="flex flex-col gap-4 lg:gap-5 2xl:gap-7.5">
+                            <h4
+                                class="text-[#F3DFD8] text-lg lg:text-[22px] font-mono font-bold"
+                            >
+                                Services
+                            </h4>
+                            <ul
+                                class="flex flex-col gap-2.5 lg:gap-3.5 2xl:gap-4.5 text-sm lg:text-base 2xl:text-lg text-[#81807E]"
+                            >
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >Web Development</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >App Development</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >Web Design</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >Digital Marketing</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- List Link 3 -->
+                        <div class="flex flex-col gap-4 lg:gap-5 2xl:gap-7.5">
+                            <h4
+                                class="text-[#F3DFD8] text-lg lg:text-[22px] font-mono font-bold"
+                            >
+                                Projects
+                            </h4>
+                            <ul
+                                class="flex flex-col gap-2.5 lg:gap-3.5 2xl:gap-4.5 text-sm lg:text-base 2xl:text-lg text-[#81807E]"
+                            >
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >Klothink</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >Zenith</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >Novus</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >Apex</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- List Link 4 -->
+                        <div class="flex flex-col gap-4 lg:gap-5 2xl:gap-7.5">
+                            <h4
+                                class="text-[#F3DFD8] text-lg lg:text-[22px] font-mono font-bold"
+                            >
+                                Blogs
+                            </h4>
+                            <ul
+                                class="flex flex-col gap-2.5 lg:gap-3.5 2xl:gap-4.5 text-sm lg:text-base 2xl:text-lg text-[#81807E]"
+                            >
+                                <li>
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >Business</a
+                                    >
+                                </li>
+                                <li class="flex items-center">
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >Design</a
+                                    >
+                                    <span
+                                        class="text-xs 2xl:text-base px-2.5 py-1 2xl:px-3 ml-2 border border-[#333333] text-[#CCCCCC] bg-[#262626] font-mono leading-[150%] rounded-md tracking-[-0.03em]"
+                                        >Soon</span
+                                    >
+                                </li>
+                                <li class="flex items-center">
+                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                        >Development</a
+                                    >
+                                    <span
+                                        class="text-xs 2xl:text-base px-2.5 py-1 2xl:px-3 ml-2 border border-[#333333] text-[#CCCCCC] bg-[#262626] font-mono leading-[150%] rounded-md tracking-[-0.03em]"
+                                        >Soon</span
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!--  NewsLetter -->
+
+                    <form
+                        class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4 2xl:gap-5 p-6 lg:p-10 2xl:p-12.5 bg-[#1A1A1A] rounded-[14px] lg:rounded-2xl group"
+                    >
+                        <div class="leading-[150%] uppercase">
+                            <span
+                                class="text-sm lg:text-base 2xl:text-lg text-[#676665] font-mono"
+                                >Newsletter</span
+                            >
+                            <h3
+                                class="text-[20px] lg:text-3xl 2xl:text-[30px] mt-1 lg:mt-2 2xl:mt-2.5 text-[#F9EFEC] font-medium"
+                            >
+                                Subscribe To our Newsletter
+                            </h3>
+                        </div>
+
+                        <div
+                            class="flex items-center 2xl:gap-5 lg:gap-2.5 gap-2 lg:w-[42%] min-w-0"
+                        >
+                            <input
+                                type="email"
+                                name="newsletter"
+                                placeholder="Enter your email"
+                                class="w-full px-4 py-3.5 2xl:py-4.5 2xl:px-5 text-sm lg:text-base 2xl:text-lg text-[#F9EFEC] outline-none border-b border-[#333333] focus:border-[#E7BEB1] transition-all duration-300 placeholder:text-[#676665] leading-[150%]"
+                            />
+                            <button
+                                type="submit"
+                                name="newsletter"
+                                class="ml-auto p-2.5 border border-[#333333] rounded-full shrink-0 hover:bg-[#1A1A1A] transition-all duration-300 focus:border-[#E7BEB1] group-hover:-rotate-135 active:scale-95"
+                            >
+                                <svg
+                                    class="size-5"
+                                    width="22"
+                                    height="22"
+                                    viewBox="0 0 22 22"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M7.5625 3.4375L17.875 3.4375C18.0573 3.4375 18.2322 3.50993 18.3611 3.63886C18.4901 3.7678 18.5625 3.94266 18.5625 4.125V14.4375C18.5625 14.8172 18.2547 15.125 17.875 15.125C17.4953 15.125 17.1875 14.8172 17.1875 14.4375V5.78477L4.61114 18.3611C4.34265 18.6296 3.90735 18.6296 3.63886 18.3611C3.37038 18.0926 3.37038 17.6574 3.63886 17.3889L16.2152 4.8125L7.5625 4.8125C7.1828 4.8125 6.875 4.5047 6.875 4.125C6.875 3.7453 7.1828 3.4375 7.5625 3.4375Z"
+                                        fill="#E7BEB1"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Copyright -->
+
+                    <div
+                        class="flex flex-col lg:flex-row items-center justify-center lg:justify-between p-6 lg:p-10 2xl:p-7.5 text-sm 2xl:text-lg text-[#B3B3B2] font-mono rounded-[14px] lg:rounded-2xl bg-[#1A1A1A] leading-[150%]"
+                    >
+                        <small class="text-sm 2xl:text-lg mb-5 lg:mb-0">
+                            © 2026 NextGen. All rights reserved.
+                        </small>
+
+                        <!-- Desktop -->
+                        <div class="gap-2.5 hidden lg:flex">
+                            <a
+                                href="#!"
+                                class="border-r pr-2 2xl:pr-2.5 border-[#232329] hover:text-[#F3DFD8] link"
+                                >Terms & Conditions</a
+                            >
+
+                            <a href="#!" class="hover:text-[#F3DFD8] link"
+                                >Privacy Policy</a
+                            >
+                        </div>
+
+                        <!-- Mobile -->
+                        <a
+                            href="#!"
+                            class="flex justify-center pb-5 w-full border-b border-[#232329] lg:hidden "
+                            >Terms & Conditions</a
+                        >
+
+                        <a href="#!" class="pt-5 lg:hidden">Privacy Policy</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

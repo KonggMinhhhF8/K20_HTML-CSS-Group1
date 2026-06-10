@@ -1,0 +1,80 @@
+:root {
+    --font-primary: "Roboto Flex", sans-serif;
+    --font-mono: "Roboto Mono", monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+.font-mono {
+    font-family: var(--font-mono);
+}
+
+/* Marquee Infinite */
+@keyframes marqee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.marqee {
+    animation: marqee 15s linear infinite;
+    display: flex;
+    width: max-content;
+}
+
+.marqee:hover {
+    animation-play-state: paused;
+}
+
+.btn-primary,
+.img-primary,
+.arrow-link {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:active {
+    color: #f9efec;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(206, 125, 99, 0.35);
+}
+
+.img-primary:hover {
+    transform: scale(1.03);
+}
+
+.group-arrow:hover .arrow-link {
+    transform: rotate(45deg);
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: #f3dfd8;
+    transition: all 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+}
