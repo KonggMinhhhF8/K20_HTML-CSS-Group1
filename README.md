@@ -25,8 +25,3 @@ k20_html_css_group1/
 
 Thuộc nhóm 1: Sơn, Trung, Tuấn, Hùng
 ---
-
----
-
-Người phụ trách: Sơn Nguyễn
----
