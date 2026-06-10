@@ -407,56 +407,73 @@
 @media (max-width: 585px) {
     .container {
         width: 358px;
-        margin: 20px auto;
+        margin: 0px auto;
     }
     .header-action {
         display: none;
     }
-    
-     .logo img {
+
+    .logo img {
         width: 86px;
         height: 100%;
     }
     .hamburger {
         display: block;
+        cursor: pointer;
     }
-    .logo-wrapper {
-        display: inline-block;
-    }
-    .header-mobile {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .navbar {display: none;}
+
     .header-top {
+        position: relative;
         padding: 14px;
         border-radius: 10px;
     }
-    
-    .nav-wrapper {
-        padding: 40px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 70%;
-        flex-direction: column;
+    .navbar-mobile {
+        display: block;
+    }
 
-        background-color: rgb(31, 36, 44);
-        justify-content: flex-start;
-        translate: 101%;
-    }
     .navbar__list {
+        display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        gap: 100px;
-        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
     }
+    .navbar {
+        padding: 20px;
+        z-index: 100;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        justify-content: flex-start;
+        transform: translateX(101%);
+        transition: 0.3s ease;
+        visibility: hidden;
+        background: #1a1a1a;
+    }
+
     .navbar__link {
-        padding: 0px;
+        color: #fff;
         background-color: transparent;
+        text-decoration: none;
+        font-size: 1.4rem;
+        transition:
+            color 0.3s ease,
+            transform 0.3s ease;
+        &:hover {
+            color: #ce7d63;
+            transform: translateX(8px);
+        }
     }
+    .navbar__close {
+        color: #fff;
+        cursor: pointer;
+        font-size: 2rem;
+        transition: 0.3s;
+    }
+    #drawer-input:checked ~ .navbar {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
     /* hero */
     .hero {
         margin-top: 20px;
