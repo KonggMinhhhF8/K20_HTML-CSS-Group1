@@ -1,7 +1,9 @@
 .hamburger {
     display: none;
 }
-
+.navbar__close {
+    display: none;
+}
 .hero__cta--mobile {
     display: none;
 }
