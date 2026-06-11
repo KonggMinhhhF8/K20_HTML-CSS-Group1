@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>tailwind</title>
+        <title>Services Page</title>
 
         <!-- Embed Fonts -->
 
@@ -17,7 +17,10 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
         <!-- Styles Css -->
-        <link rel="stylesheet" href="../assets/css/services.css" />
+        <link
+            rel="stylesheet"
+            href="../assets/services-assets/css/services.css"
+        />
     </head>
     <body id="header" class="bg-[#0F0F0F]">
         <div
@@ -38,17 +41,22 @@
                     href="#header"
                     class="w-[86.47px] h-4 lg:w-[97px] lg:h-[18px] 2xl:w-[130px] lg:ml-[26px] 2xl:ml-9 2xl:h-6"
                 >
-                    <img src="../assets/img/services/Logo.png" alt="Logo" />
+                    <img
+                        src="../assets/services-assets/img/Logo.png"
+                        alt="Logo"
+                    />
                 </a>
 
                 <!-- Hamburger Menu -->
 
                 <label class="lg:hidden cursor-pointer" for="menu-toggle"
-                    ><img src="../assets/icon/services/menu.svg" alt="Menu"
+                    ><img
+                        src="../assets/services-assets/icon/menu.svg"
+                        alt="Menu"
                 /></label>
 
                 <!-- Navigation Desktop -->
-                <nav class="lg:flex hidden lg:bg-[#1A1A1A]">
+                <nav class="hidden lg:flex lg:bg-[#1A1A1A]">
                     <ul
                         class="flex gap-[14px] font-mono font-medium uppercase text-[#81807E]"
                     >
@@ -56,7 +64,7 @@
                             class="flex items-center justify-center lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
                         >
                             <a
-                                href="#!"
+                                href="../home.html"
                                 class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
                                 >Home</a
                             >
@@ -65,7 +73,7 @@
                             class="flex items-center justify-center lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
                         >
                             <a
-                                href="#!"
+                                href="./services.html"
                                 class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300 text-[#E7BEB1]"
                                 >Services</a
                             >
@@ -74,7 +82,7 @@
                             class="flex items-center justify-center lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
                         >
                             <a
-                                href="#!"
+                                href="./project.html"
                                 class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
                                 >Projects</a
                             >
@@ -83,7 +91,7 @@
                             class="flex items-center justify-center lg:text-sm 2xl:text-lg bg-[#0F0F0F] rounded-[10px]"
                         >
                             <a
-                                href="#!"
+                                href="./about.html"
                                 class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:text-[#E7BEB1] transition-colors duration-300"
                                 >About</a
                             >
@@ -111,7 +119,7 @@
                         >
                             <a
                                 href="#!"
-                                class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:opacity-70 transition-colors duration-300"
+                                class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-[18px] hover:opacity-70 transition-opacity duration-300"
                                 >Contact Us</a
                             >
                         </li>
@@ -122,35 +130,35 @@
             <!-- Navigation Mobile -->
 
             <nav
-                class="fixed z-[200] font-mono h-screen top-[41px] w-[280px] p-6 right-0 translate-x-full peer-checked:translate-x-0 lg:hidden bg-[#1A1A1A] transition-transform duration-300 ease-in-out"
+                class="fixed z-[200] lg:hidden font-mono h-screen top-[41px] w-[280px] p-6 right-0 translate-x-full peer-checked:translate-x-0 bg-[#1A1A1A] transition-transform duration-300 ease-in-out"
             >
                 <ul class="flex gap-5 flex-col mt-32 text-[#81807E]">
                     <li
                         class="flex justify-center bg-[#0F0F0F] rounded-xl shadow-lg"
                     >
                         <a
-                            href="#!"
+                            href="../home.html"
                             class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-all duration-300"
                             >Home</a
                         >
                     </li>
                     <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
                         <a
-                            href="#!"
+                            href="./services.html"
                             class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-all duration-300"
                             >Services</a
                         >
                     </li>
                     <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
                         <a
-                            href="#!"
+                            href="./project.html"
                             class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-all duration-300"
                             >Projects</a
                         >
                     </li>
                     <li class="flex justify-center bg-[#0F0F0F] rounded-xl">
                         <a
-                            href="#!"
+                            href="./about.html"
                             class="hover:text-[#E7BEB1] active:text-[#E7BEB1] px-20 py-4 transition-all duration-300"
                             >About</a
                         >
@@ -174,7 +182,7 @@
                     >
                         <a
                             href="#!"
-                            class="hover:bg-red-500 active:text-[#E7BEB1] text-[#0F0F0F] px-20 py-4 transition-all duration-300"
+                            class="active:text-[#E7BEB1] text-[#0F0F0F] px-20 py-4 transition-all duration-300"
                             >Contact Us</a
                         >
                     </li>
@@ -213,11 +221,11 @@
 
                                 <a
                                     href="#!"
-                                    class="group flex ml-4 mb-5 lg:ml-3 lg:mb-0 lg:-translate-y-3/4 2xl:-translate-y-3/4"
+                                    class="group flex ml-4 mb-5 lg:ml-3 lg:mb-0 lg:-translate-y-3/4"
                                 >
                                     <img
                                         class="2xl:w-[262px] 2xl:h-[77px] transition-all duration-300 group-hover:scale-110"
-                                        src="../assets/icon/services/button-hero.svg"
+                                        src="../assets/services-assets/icon/button-hero.svg"
                                         alt="Button Link"
                                     />
                                 </a>
@@ -243,76 +251,80 @@
                                     <div
                                         class="flex items-center py-[14px] text-sm 2xl:text-xl text-[#676665] font-mono uppercase"
                                     >
-                                        <span
-                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
-                                            >Digital Marketing</span
-                                        >
-                                        <span
-                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
-                                        ></span>
-                                        <span
-                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
-                                            >Website Design</span
-                                        >
-                                        <span
-                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
-                                        ></span>
-                                        <span
-                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
-                                            >Branding</span
-                                        >
-                                        <span
-                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
-                                        ></span>
-                                        <span
-                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
-                                            >Website Development</span
-                                        >
-                                        <span
-                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
-                                        ></span>
-                                        <span
-                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
-                                            >Mobile App Development</span
-                                        >
-                                        <span
-                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
-                                        ></span>
-                                        <span
-                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
-                                            >Digital Marketing</span
-                                        >
-                                        <span
-                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
-                                        ></span>
-                                        <span
-                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
-                                            >Website Design</span
-                                        >
-                                        <span
-                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
-                                        ></span>
-                                        <span
-                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
-                                            >Branding</span
-                                        >
-                                        <span
-                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
-                                        ></span>
-                                        <span
-                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
-                                            >Website Development</span
-                                        >
-                                        <span
-                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
-                                        ></span>
-                                        <span
-                                            class="px-[7px] lg:px-[10px] 2xl:px-5"
-                                            >Mobile App Development</span
-                                        >
-                                        <span
-                                            class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
-                                        ></span>
+                                        <div class="flex shrink-0 items-center">
+                                            <span
+                                                class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                                >Digital Marketing</span
+                                            >
+                                            <span
+                                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                            <span
+                                                class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                                >Website Design</span
+                                            >
+                                            <span
+                                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                            <span
+                                                class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                                >Branding</span
+                                            >
+                                            <span
+                                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                            <span
+                                                class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                                >Website Development</span
+                                            >
+                                            <span
+                                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                            <span
+                                                class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                                >Mobile App Development</span
+                                            >
+                                            <span
+                                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                        </div>
+                                        <div class="flex shrink-0 items-center">
+                                            <span
+                                                class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                                >Digital Marketing</span
+                                            >
+                                            <span
+                                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                            <span
+                                                class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                                >Website Design</span
+                                            >
+                                            <span
+                                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                            <span
+                                                class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                                >Branding</span
+                                            >
+                                            <span
+                                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                            <span
+                                                class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                                >Website Development</span
+                                            >
+                                            <span
+                                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                            <span
+                                                class="px-[7px] lg:px-[10px] 2xl:px-5"
+                                                >Mobile App Development</span
+                                            >
+                                            <span
+                                                class="size-2 shrink-0 rounded-full bg-[#CE7D63]"
+                                            ></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -320,13 +332,14 @@
 
                         <!-- Media -->
                         <figure
-                            class="lg:w-[33%] lg:h-full mt-4 lg:mt-0 hover:scale-102 transition-all duration-300"
+                            class="lg:w-[33%] lg:h-full mt-4 lg:mt-0 hover:scale-102 transition-all duration-300 rounded-[14px] lg:rounded-2xl 2xl:rounded-[20px] overflow-hidden"
                         >
-                            <a href="">
+                            <a href="#!">
                                 <img
-                                    class="size-full"
-                                    src="../assets/img/services/brain-tree.png"
+                                    class="size-full object-cover"
+                                    src="../assets/services-assets/img/brain-tree.png"
                                     alt="Brain Tree"
+                                    loading="lazy"
                                 />
                             </a>
                         </figure>
@@ -355,7 +368,7 @@
                         <!-- Right Card -->
 
                         <article
-                            class="pb-6 lg:pb-0 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
+                            class="pb-6 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
                         >
                             <div
                                 class="px-6 pt-6 lg:px-15 lg:py-20.5 leading-[150%]"
@@ -370,7 +383,7 @@
                                     >
                                         <img
                                             class="lg:size-[56px] 2xl:size-[66px]"
-                                            src="../assets/icon/services/web-design.svg"
+                                            src="../assets/services-assets/icon/web-design.svg"
                                             alt="Web Design"
                                         />
 
@@ -384,7 +397,7 @@
                                     >
                                         <img
                                             class="arrow-link lg:size-10 2xl:size-[52px]"
-                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            src="../assets/services-assets/icon/arrowtop-right.svg"
                                             alt="Arrow Link"
                                         />
 
@@ -430,13 +443,13 @@
                         <article
                             class="hidden lg:grid pb-6 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
                         >
-                            <div class="flex hidden p-[30px] 2xl:p-10 lg:block">
+                            <div class="hidden p-[30px] 2xl:p-10 lg:block">
                                 <!-- Left Card Title  -->
                                 <div
                                     class="flex items-center justify-between font-medium uppercase"
                                 >
                                     <h3
-                                        class="text-[#F9EFEC] text-xl 2xl:text-2xl uppercase"
+                                        class="text-[#F9EFEC] text-xl 2xl:text-2xl"
                                     >
                                         Web Design Projects
                                     </h3>
@@ -447,7 +460,7 @@
                                     >
                                         <img
                                             class="arrow-link 2xl:size-[68px]"
-                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            src="../assets/services-assets/icon/arrowtop-right.svg"
                                             alt="Arrow Link"
                                         />
 
@@ -465,14 +478,15 @@
                                         class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
                                     >
                                         <img
+                                            loading="lazy"
                                             class="block size-full border border-[#333333] rounded-[10px] object-cover"
-                                            src="../assets/img/services/our-img.png"
+                                            src="../assets/services-assets/img/our-img.png"
                                             alt="Projects1"
                                         />
 
                                         <img
                                             class="absolute bottom-5 left-5"
-                                            src="../assets/icon/services/open-our.svg"
+                                            src="../assets/services-assets/icon/open-our.svg"
                                             alt=""
                                         />
                                     </a>
@@ -482,13 +496,14 @@
                                         class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
                                     >
                                         <img
+                                            loading="lazy"
                                             class="block size-full border border-[#333333] rounded-[10px] object-cover"
-                                            src="../assets/img/services/our-img2.png"
+                                            src="../assets/services-assets/img/our-img2.png"
                                             alt="Projects2"
                                         />
                                         <img
                                             class="absolute bottom-5 left-5"
-                                            src="../assets/icon/services/open-our.svg"
+                                            src="../assets/services-assets/icon/open-our.svg"
                                             alt=""
                                         />
                                     </a>
@@ -515,7 +530,7 @@
                                     >
                                         <img
                                             class="lg:size-[56px] 2xl:size-[66px]"
-                                            src="../assets/icon/services/mobile-app.svg"
+                                            src="../assets/services-assets/icon/mobile-app.svg"
                                             alt="Mobile App Development"
                                         />
 
@@ -531,7 +546,7 @@
                                     >
                                         <img
                                             class="arrow-link lg:size-10 2xl:size-[52px]"
-                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            src="../assets/services-assets/icon/arrowtop-right.svg"
                                             alt="Arrow Link"
                                         />
 
@@ -578,13 +593,13 @@
                         <article
                             class="hidden lg:grid pb-6 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
                         >
-                            <div class="flex hidden p-[30px] 2xl:p-10 lg:block">
+                            <div class="hidden p-[30px] 2xl:p-10 lg:block">
                                 <!-- Left Card Title  -->
                                 <div
                                     class="flex items-center justify-between font-medium uppercase"
                                 >
                                     <h3
-                                        class="text-[#F9EFEC] text-xl 2xl:text-2xl uppercase"
+                                        class="text-[#F9EFEC] text-xl 2xl:text-2xl"
                                     >
                                         Mobile App Development Projects
                                     </h3>
@@ -595,7 +610,7 @@
                                     >
                                         <img
                                             class="arrow-link 2xl:size-[68px]"
-                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            src="../assets/services-assets/icon/arrowtop-right.svg"
                                             alt="Arrow Link"
                                         />
 
@@ -613,14 +628,15 @@
                                         class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
                                     >
                                         <img
+                                            loading="lazy"
                                             class="block size-full border border-[#333333] rounded-[10px] object-cover"
-                                            src="../assets/img/services/our-img3.png"
+                                            src="../assets/services-assets/img/our-img3.png"
                                             alt="Projects3"
                                         />
 
                                         <img
                                             class="absolute bottom-5 left-5"
-                                            src="../assets/icon/services/open-our.svg"
+                                            src="../assets/services-assets/icon/open-our.svg"
                                             alt=""
                                         />
                                     </a>
@@ -630,13 +646,14 @@
                                         class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
                                     >
                                         <img
+                                            loading="lazy"
                                             class="block size-full border border-[#333333] rounded-[10px] object-cover"
-                                            src="../assets/img/services/our-img4.png"
+                                            src="../assets/services-assets/img/our-img4.png"
                                             alt="Projects4"
                                         />
                                         <img
                                             class="absolute bottom-5 left-5"
-                                            src="../assets/icon/services/open-our.svg"
+                                            src="../assets/services-assets/icon/open-our.svg"
                                             alt=""
                                         />
                                     </a>
@@ -663,7 +680,7 @@
                                     >
                                         <img
                                             class="lg:size-[56px] 2xl:size-[66px]"
-                                            src="../assets/icon/services/web-dev.svg"
+                                            src="../assets/services-assets/icon/web-dev.svg"
                                             alt=" Web Development"
                                         />
 
@@ -679,7 +696,7 @@
                                     >
                                         <img
                                             class="arrow-link lg:size-10 2xl:size-[52px]"
-                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            src="../assets/services-assets/icon/arrowtop-right.svg"
                                             alt="Arrow Link"
                                         />
 
@@ -727,13 +744,13 @@
                         <article
                             class="hidden lg:grid pb-6 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
                         >
-                            <div class="flex hidden p-[30px] 2xl:p-10 lg:block">
+                            <div class="hidden p-[30px] 2xl:p-10 lg:block">
                                 <!-- Left Card Title  -->
                                 <div
                                     class="flex items-center justify-between font-medium uppercase"
                                 >
                                     <h3
-                                        class="text-[#F9EFEC] text-xl 2xl:text-2xl uppercase"
+                                        class="text-[#F9EFEC] text-xl 2xl:text-2xl"
                                     >
                                         Web Development Projects
                                     </h3>
@@ -744,7 +761,7 @@
                                     >
                                         <img
                                             class="arrow-link 2xl:size-[68px]"
-                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            src="../assets/services-assets/icon/arrowtop-right.svg"
                                             alt="Arrow Link"
                                         />
 
@@ -762,14 +779,15 @@
                                         class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
                                     >
                                         <img
+                                            loading="lazy"
                                             class="block size-full border border-[#333333] rounded-[10px] object-cover"
-                                            src="../assets/img/services/our-img5.png"
+                                            src="../assets/services-assets/img/our-img5.png"
                                             alt="Projects5"
                                         />
 
                                         <img
                                             class="absolute bottom-5 left-5"
-                                            src="../assets/icon/services/open-our.svg"
+                                            src="../assets/services-assets/icon/open-our.svg"
                                             alt=""
                                         />
                                     </a>
@@ -779,13 +797,14 @@
                                         class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
                                     >
                                         <img
+                                            loading="lazy"
                                             class="block size-full border border-[#333333] rounded-[10px] object-cover"
-                                            src="../assets/img/services/our-img6.png"
+                                            src="../assets/services-assets/img/our-img6.png"
                                             alt="Projects6"
                                         />
                                         <img
                                             class="absolute bottom-5 left-5"
-                                            src="../assets/icon/services/open-our.svg"
+                                            src="../assets/services-assets/icon/open-our.svg"
                                             alt=""
                                         />
                                     </a>
@@ -812,7 +831,7 @@
                                     >
                                         <img
                                             class="lg:size-[56px] 2xl:size-[66px]"
-                                            src="../assets/icon/services/digital-mkt.svg"
+                                            src="../assets/services-assets/icon/digital-mkt.svg"
                                             alt="Digital Marketing"
                                         />
 
@@ -828,7 +847,7 @@
                                     >
                                         <img
                                             class="arrow-link lg:size-10 2xl:size-[52px]"
-                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            src="../assets/services-assets/icon/arrowtop-right.svg"
                                             alt="Arrow Link"
                                         />
 
@@ -876,13 +895,13 @@
                         <article
                             class="hidden lg:grid pb-6 lg:pb-0 bg-[#1A1A1A] rounded-[14px] lg:rounded-xl group-arrow"
                         >
-                            <div class="flex hidden p-[30px] 2xl:p-10 lg:block">
+                            <div class="hidden p-[30px] 2xl:p-10 lg:block">
                                 <!-- Left Card Title  -->
                                 <div
                                     class="flex items-center justify-between font-medium uppercase"
                                 >
                                     <h3
-                                        class="text-[#F9EFEC] text-xl 2xl:text-2xl uppercase"
+                                        class="text-[#F9EFEC] text-xl 2xl:text-2xl"
                                     >
                                         Digital Marketing Projects
                                     </h3>
@@ -893,7 +912,7 @@
                                     >
                                         <img
                                             class="arrow-link 2xl:size-[68px]"
-                                            src="../assets/icon/services/arrowtop-right.svg"
+                                            src="../assets/services-assets/icon/arrowtop-right.svg"
                                             alt="Arrow Link"
                                         />
 
@@ -911,14 +930,15 @@
                                         class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
                                     >
                                         <img
+                                            loading="lazy"
                                             class="block size-full border border-[#333333] rounded-[10px] object-cover"
-                                            src="../assets/img/services/our-img7.png"
+                                            src="../assets/services-assets/img/our-img7.png"
                                             alt="Projects7"
                                         />
 
                                         <img
                                             class="absolute bottom-5 left-5"
-                                            src="../assets/icon/services/open-our.svg"
+                                            src="../assets/services-assets/icon/open-our.svg"
                                             alt=""
                                         />
                                     </a>
@@ -928,13 +948,14 @@
                                         class="w-full h-[220px] 2xl:h-[251px] relative img-primary"
                                     >
                                         <img
+                                            loading="lazy"
                                             class="block size-full border border-[#333333] rounded-[10px] object-cover"
-                                            src="../assets/img/services/our-img6.png"
+                                            src="../assets/services-assets/img/our-img6.png"
                                             alt="Projects8"
                                         />
                                         <img
                                             class="absolute bottom-5 left-5"
-                                            src="../assets/icon/services/open-our.svg"
+                                            src="../assets/services-assets/icon/open-our.svg"
                                             alt=""
                                         />
                                     </a>
@@ -962,7 +983,7 @@
                         >
                             <img
                                 class="arrow-link"
-                                src="../assets/icon/services/arrowtop-right.svg"
+                                src="../assets/services-assets/icon/arrowtop-right.svg"
                                 alt=""
                             />
                             <span class="2xl:text-xl text-base text-[#B3B3B2]"
@@ -981,7 +1002,7 @@
                             <div class="grid lg:grid-cols-2 gap-2.5 2xl:gap-5">
                                 <!-- Column 1 -->
                                 <article
-                                    class="grid gap-5 2xl:gap-12.5 p-5 lg:px-10 lg:py-11 2xl:px-15 2xl:py-21 rounded-[10px] bg-[#1A1A1A] rounded-[10px] lg:rounded-[12px] 2xl:rounded-[14px] group-arrow"
+                                    class="grid gap-5 2xl:gap-12.5 p-5 lg:px-10 lg:py-11 2xl:px-15 2xl:py-21 bg-[#1A1A1A] rounded-[10px] lg:rounded-[12px] 2xl:rounded-[14px] group-arrow"
                                 >
                                     <div class="lg:flex justify-between">
                                         <div
@@ -989,7 +1010,7 @@
                                         >
                                             <img
                                                 class="lg:size-[56px] 2xl:size-[66px]"
-                                                src="../assets/icon/services/klothink.svg"
+                                                src="../assets/services-assets/icon/klothink.svg"
                                                 alt=" Klothink"
                                             />
                                             <h3
@@ -1004,8 +1025,8 @@
                                         >
                                             <img
                                                 class="size-10 2xl:size-13 arrow-link"
-                                                src="../assets/icon/services/arrowtop-right.svg"
-                                                alt=""
+                                                src="../assets/services-assets/icon/arrowtop-right.svg"
+                                                alt="Arrow Link"
                                             />
                                             <span
                                                 class="ml-2 font-mono text-sm lg:text-base 2xl:text-xl font-medium"
@@ -1181,7 +1202,7 @@
                             <div class="grid lg:grid-cols-2 gap-2.5 2xl:gap-5">
                                 <!-- Column 1 -->
                                 <article
-                                    class="grid gap-5 2xl:gap-12.5 p-5 lg:px-10 lg:py-11 2xl:px-15 2xl:py-21 rounded-[10px] bg-[#1A1A1A] rounded-[10px] lg:rounded-[12px] 2xl:rounded-[14px] group-arrow"
+                                    class="grid gap-5 2xl:gap-12.5 p-5 lg:px-10 lg:py-11 2xl:px-15 2xl:py-21 bg-[#1A1A1A] rounded-[10px] lg:rounded-[12px] 2xl:rounded-[14px] group-arrow"
                                 >
                                     <div class="lg:flex justify-between">
                                         <div
@@ -1189,7 +1210,7 @@
                                         >
                                             <img
                                                 class="lg:size-[56px] 2xl:size-[66px]"
-                                                src="../assets/icon/services/finess-app.svg"
+                                                src="../assets/services-assets/icon/finess-app.svg"
                                                 alt="Fitness Tracker"
                                             />
                                             <h3
@@ -1204,11 +1225,11 @@
                                         >
                                             <img
                                                 class="size-10 2xl:size-13 arrow-link"
-                                                src="../assets/icon/services/arrowtop-right.svg"
-                                                alt=""
+                                                src="../assets/services-assets/icon/arrowtop-right.svg"
+                                                alt="Arrow Link"
                                             />
                                             <span
-                                                class="ml-2 font-mono text-sm lg:text-base 2xl:text-xl lg:text-base 2xl:text-xl font-medium"
+                                                class="ml-2 font-mono text-sm lg:text-base 2xl:text-xl font-medium"
                                                 >Visit Website</span
                                             >
                                         </a>
@@ -1279,17 +1300,17 @@
                                         class="flex gap-2.5 2xl:gap-3 text-sm 2xl:text-lg uppercase"
                                     >
                                         <label
-                                            class="px-5 py-3.5 2xl:py-4.5 2xl:px-6 text-[#B3B3B2] font-medium leading-[150%] bg-[#1F1F1F] hover:bg-[#CE7D63] hover:text-[#0F0F0F] rounded-lg transition-colors duration-300 ease group-has-[#challenge2:checked]:bg-[#CE7D63] group-has-[#challenge2:checked]:text-[#0F0F0F]"
+                                            class="px-5 py-3.5 2xl:py-4.5 2xl:px-6 text-[#B3B3B2] font-medium leading-[150%] bg-[#1F1F1F] hover:bg-[#CE7D63] hover:text-[#0F0F0F] rounded-lg transition-colors duration-300 ease-in-out group-has-[#challenge2:checked]:bg-[#CE7D63] group-has-[#challenge2:checked]:text-[#0F0F0F]"
                                             for="challenge2"
                                             >Challenge</label
                                         >
                                         <label
-                                            class="px-5 py-3.5 2xl:py-4.5 2xl:px-6 text-[#B3B3B2] font-medium leading-[150%] bg-[#1F1F1F] hover:bg-[#CE7D63] hover:text-[#0F0F0F] rounded-lg transition-colors duration-300 ease group-has-[#solution2:checked]:bg-[#CE7D63] group-has-[#solution2:checked]:text-[#0F0F0F]"
+                                            class="px-5 py-3.5 2xl:py-4.5 2xl:px-6 text-[#B3B3B2] font-medium leading-[150%] bg-[#1F1F1F] hover:bg-[#CE7D63] hover:text-[#0F0F0F] rounded-lg transition-colors duration-300 ease-in-out group-has-[#solution2:checked]:bg-[#CE7D63] group-has-[#solution2:checked]:text-[#0F0F0F]"
                                             for="solution2"
                                             >Solution</label
                                         >
                                         <label
-                                            class="px-5 py-3.5 2xl:py-4.5 2xl:px-6 text-[#B3B3B2] font-medium leading-[150%] bg-[#1F1F1F] hover:bg-[#CE7D63] hover:text-[#0F0F0F] rounded-lg transition-colors duration-300 ease group-has-[#results2:checked]:bg-[#CE7D63] group-has-[#results2:checked]:text-[#0F0F0F]"
+                                            class="px-5 py-3.5 2xl:py-4.5 2xl:px-6 text-[#B3B3B2] font-medium leading-[150%] bg-[#1F1F1F] hover:bg-[#CE7D63] hover:text-[#0F0F0F] rounded-lg transition-colors duration-300 ease-in-out group-has-[#results2:checked]:bg-[#CE7D63] group-has-[#results2:checked]:text-[#0F0F0F]"
                                             for="results2"
                                             >Results</label
                                         >
@@ -1427,7 +1448,7 @@
                         >
                             <img
                                 class="arrow-link 2xl:size-17"
-                                src="../assets/icon/services/arrowtop-right.svg"
+                                src="../assets/services-assets/icon/arrowtop-right.svg"
                                 alt=""
                             />
                             <span class="2xl:text-xl text-base text-[#B3B3B2]"
@@ -1464,7 +1485,7 @@
                             >
                                 <img
                                     class="size-10 lg:size-12.5 2xl:size-15"
-                                    src="../assets/img/services/avatar.png"
+                                    src="../assets/services-assets/img/avatar.png"
                                     alt="Sarah Thompson"
                                 />
                                 <div class="ml-2 lg:ml-2.5 2xl:ml-4">
@@ -1525,7 +1546,7 @@
                             >
                                 <img
                                     class="size-10 lg:size-12.5 2xl:size-15"
-                                    src="../assets/img/services/avatar2.png"
+                                    src="../assets/services-assets/img/avatar2.png"
                                     alt="Wade Warren"
                                 />
                                 <div class="ml-2 lg:ml-2.5 2xl:ml-4">
@@ -1587,7 +1608,7 @@
                             >
                                 <img
                                     class="size-10 lg:size-12.5 2xl:size-15"
-                                    src="../assets/img/services/avatar3.png"
+                                    src="../assets/services-assets/img/avatar3.png"
                                     alt="Lisa Williams"
                                 />
                                 <div class="ml-2 lg:ml-2.5 2xl:ml-4">
@@ -1649,7 +1670,7 @@
                             >
                                 <img
                                     class="size-10 lg:size-12.5 2xl:size-15"
-                                    src="../assets/img/services/avatar4.png"
+                                    src="../assets/services-assets/img/avatar4.png"
                                     alt="Jennifer Lee"
                                 />
                                 <div class="ml-2 lg:ml-2.5 2xl:ml-4">
@@ -1739,7 +1760,7 @@
                         >
                             <img
                                 class="arrow-link 2xl:size-17"
-                                src="../assets/icon/services/arrowtop-right.svg"
+                                src="../assets/services-assets/icon/arrowtop-right.svg"
                                 alt=""
                             />
 
@@ -1786,7 +1807,7 @@
                                         class="flex items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full plus cursor-pointer select-none"
                                     >
                                         <img
-                                            src="../assets/icon/services/plus.svg"
+                                            src="../assets/services-assets/icon/plus.svg"
                                             alt="plus"
                                         />
                                     </label>
@@ -1798,7 +1819,7 @@
                                     >
                                         <img
                                             class=""
-                                            src="../assets/icon/services/minus.svg"
+                                            src="../assets/services-assets/icon/minus.svg"
                                             alt="minus"
                                         />
                                     </label>
@@ -1853,7 +1874,7 @@
                                         class="flex items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full plus cursor-pointer select-none"
                                     >
                                         <img
-                                            src="../assets/icon/services/plus.svg"
+                                            src="../assets/services-assets/icon/plus.svg"
                                             alt="plus"
                                         />
                                     </label>
@@ -1865,7 +1886,7 @@
                                     >
                                         <img
                                             class=""
-                                            src="../assets/icon/services/minus.svg"
+                                            src="../assets/services-assets/icon/minus.svg"
                                             alt="minus"
                                         />
                                     </label>
@@ -1921,7 +1942,7 @@
                                         class="flex items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full plus cursor-pointer select-none"
                                     >
                                         <img
-                                            src="../assets/icon/services/plus.svg"
+                                            src="../assets/services-assets/icon/plus.svg"
                                             alt="plus"
                                         />
                                     </label>
@@ -1932,7 +1953,7 @@
                                     >
                                         <img
                                             class=""
-                                            src="../assets/icon/services/minus.svg"
+                                            src="../assets/services-assets/icon/minus.svg"
                                             alt="minus"
                                         />
                                     </label>
@@ -1985,7 +2006,7 @@
                                         class="flex items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full plus cursor-pointer select-none"
                                     >
                                         <img
-                                            src="../assets/icon/services/plus.svg"
+                                            src="../assets/services-assets/icon/plus.svg"
                                             alt="plus"
                                         />
                                     </label>
@@ -1997,7 +2018,7 @@
                                     >
                                         <img
                                             class=""
-                                            src="../assets/icon/services/minus.svg"
+                                            src="../assets/services-assets/icon/minus.svg"
                                             alt="minus"
                                         />
                                     </label>
@@ -2056,7 +2077,7 @@
                                         class="flex items-center justify-center shrink-0 size-10 2xl:size-13 border border-[#333333] rounded-full plus cursor-pointer select-none"
                                     >
                                         <img
-                                            src="../assets/icon/services/plus.svg"
+                                            src="../assets/services-assets/icon/plus.svg"
                                             alt="plus"
                                         />
                                     </label>
@@ -2067,7 +2088,7 @@
                                     >
                                         <img
                                             class=""
-                                            src="../assets/icon/services/minus.svg"
+                                            src="../assets/services-assets/icon/minus.svg"
                                             alt="minus"
                                         />
                                     </label>
@@ -2161,7 +2182,7 @@
                                 </div>
 
                                 <div
-                                    class="flex items-center justify-center mt-2.5 lg:mt-5 2xl:mt-10 hover;"
+                                    class="flex items-center justify-center mt-2.5 lg:mt-5 2xl:mt-10"
                                 >
                                     <button
                                         type="submit"
@@ -2325,7 +2346,7 @@
                             >
                                 <img
                                     class="size-7 2xl:size-8.5 block"
-                                    src="../assets/icon/services/instagram.svg"
+                                    src="../assets/services-assets/icon/instagram.svg"
                                     alt="Instagram"
                                 />
                             </div>
@@ -2335,7 +2356,7 @@
                             >
                                 <img
                                     class="size-10 2xl:size-13"
-                                    src="../assets/icon/services/arrowtop-right.svg"
+                                    src="../assets/services-assets/icon/arrowtop-right.svg"
                                     alt=""
                                 />
                             </div>
@@ -2374,7 +2395,7 @@
                             >
                                 <img
                                     class="size-7 2xl:size-8.5 block"
-                                    src="../assets/icon/services/Twitter.svg"
+                                    src="../assets/services-assets/icon/Twitter.svg"
                                     alt="Twitter"
                                 />
                             </div>
@@ -2384,7 +2405,7 @@
                             >
                                 <img
                                     class="size-10 2xl:size-13"
-                                    src="../assets/icon/services/arrowtop-right.svg"
+                                    src="../assets/services-assets/icon/arrowtop-right.svg"
                                     alt=""
                                 />
                             </div>
@@ -2423,7 +2444,7 @@
                             >
                                 <img
                                     class="size-7 2xl:size-8.5 block"
-                                    src="../assets/icon/services/Dribbble.svg"
+                                    src="../assets/services-assets/icon/Dribbble.svg"
                                     alt="Dribbble"
                                 />
                             </div>
@@ -2433,7 +2454,7 @@
                             >
                                 <img
                                     class="size-10 2xl:size-13"
-                                    src="../assets/icon/services/arrowtop-right.svg"
+                                    src="../assets/services-assets/icon/arrowtop-right.svg"
                                     alt=""
                                 />
                             </div>
@@ -2471,7 +2492,7 @@
                             >
                                 <img
                                     class="size-7 2xl:size-8.5 block"
-                                    src="../assets/icon/services/Behance.svg"
+                                    src="../assets/services-assets/icon/Behance.svg"
                                     alt="Behance"
                                 />
                             </div>
@@ -2479,7 +2500,7 @@
                             <div class="hidden lg:block">
                                 <img
                                     class="size-10 2xl:size-13 group-hover:-rotate-180 transition-all duration-600"
-                                    src="../assets/icon/services/arrowtop-right.svg"
+                                    src="../assets/services-assets/icon/arrowtop-right.svg"
                                     alt=""
                                 />
                             </div>
@@ -2522,22 +2543,30 @@
                                 class="flex flex-col gap-2.5 lg:gap-3.5 2xl:gap-4.5 text-sm lg:text-base 2xl:text-lg text-[#81807E]"
                             >
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >Why Us</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >About Us</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >Testimonials</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >FAQ’s</a
                                     >
                                 </li>
@@ -2555,22 +2584,30 @@
                                 class="flex flex-col gap-2.5 lg:gap-3.5 2xl:gap-4.5 text-sm lg:text-base 2xl:text-lg text-[#81807E]"
                             >
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >Web Development</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >App Development</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >Web Design</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >Digital Marketing</a
                                     >
                                 </li>
@@ -2588,22 +2625,30 @@
                                 class="flex flex-col gap-2.5 lg:gap-3.5 2xl:gap-4.5 text-sm lg:text-base 2xl:text-lg text-[#81807E]"
                             >
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >Klothink</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >Zenith</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >Novus</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >Apex</a
                                     >
                                 </li>
@@ -2621,12 +2666,16 @@
                                 class="flex flex-col gap-2.5 lg:gap-3.5 2xl:gap-4.5 text-sm lg:text-base 2xl:text-lg text-[#81807E]"
                             >
                                 <li>
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >Business</a
                                     >
                                 </li>
                                 <li class="flex items-center">
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >Design</a
                                     >
                                     <span
@@ -2635,7 +2684,9 @@
                                     >
                                 </li>
                                 <li class="flex items-center">
-                                    <a href="#!" class="hover:text-[#F3DFD8] link"
+                                    <a
+                                        href="#!"
+                                        class="hover:text-[#F3DFD8] link"
                                         >Development</a
                                     >
                                     <span
@@ -2722,7 +2773,7 @@
                         <!-- Mobile -->
                         <a
                             href="#!"
-                            class="flex justify-center pb-5 w-full border-b border-[#232329] lg:hidden "
+                            class="flex justify-center pb-5 w-full border-b border-[#232329] lg:hidden"
                             >Terms & Conditions</a
                         >
 
