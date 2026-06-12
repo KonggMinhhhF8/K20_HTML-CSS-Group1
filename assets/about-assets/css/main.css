@@ -1,5 +1,8 @@
 :root {
-    /* Color */
+    /* max width */
+    --m-w-container: 1820px;
+
+    /* color */
     --absolute-white: #fff;
     --absolute-black: #000;
 
@@ -34,6 +37,10 @@
     --grey-99: #FCFCFC;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto Flex", sans-serif;
     background-color: var(--absolute-black);
@@ -43,7 +50,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1820px;
+    max-width: var(--m-w-container);
     margin: 0 auto;
 }
 

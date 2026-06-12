@@ -41,7 +41,6 @@
     }
 
     .hero-left .hero-brand a {
-        display: block;
         width: 266px;
         display: flex;
         align-items: center;
@@ -109,8 +108,11 @@
     }
 
     .hero-right a {
+        width: fit-content;
         font-family: "Roboto Mono", monospace;
         margin-top: 46px;
+        margin-left: auto;
+        margin-right: auto;
         color: var(--grey-70);
         display: flex;
         align-items: center;
@@ -1204,6 +1206,7 @@
 
         .hero-left > a {
             display: inline-block;
+            width: fit-content;
             height: 50px;
         }
 
@@ -1212,7 +1215,7 @@
         }
 
         .hero-right a {
-            margin: 0;
+            margin: 0 auto;
             padding: 20px 20px 10px;
             font-size: 14px;
         }
